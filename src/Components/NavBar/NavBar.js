@@ -7,13 +7,14 @@ const NavBar = props => {
    const { onHover } = props
 
    return(
+      // TODO: Make the 'e x p l o r e' the active item
       <div className="navbar-container" 
          onMouseEnter={() => onHover()} 
          onMouseLeave={() => onHover()}
          >
 
          <div className="not-expanded">
-            E X P L O R E
+            M E N U
          </div>
 
          <div className="navbar-flex-container">

@@ -45,6 +45,7 @@
    top: 40%;
    width: fit-content;
    background-color: #36f3f3;
+   background: linear-gradient(90deg, rgba(248,255,255,1) 0%, rgba(54,243,243,1) 16%, rgba(153,251,251,1) 61%, rgba(208,252,252,1) 83%, rgba(255,255,255,1) 93%);
    color: rgb(80, 80, 80);  
    font-size: 2vw;
    font-weight: bold;

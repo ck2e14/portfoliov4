@@ -29,12 +29,13 @@
 }
 
 .about-blurb span {  
-   background-color: rgb(100, 100, 100);
+   /* background-color: rgb(100, 100, 100);
    color: rgb(0, 247, 255);
    padding: 3px;
    padding-left: 5px;
    padding-right: 5px;
-   border-radius: 2px;
+   border-radius: 2px; */
+   font-size: 2.75vh;
 }
 
 .vertical-title {
@@ -48,6 +49,7 @@
    color: grey;
    animation: fade-in 1s;
    cursor: default;
+   background: linear-gradient(90deg, rgba(248,255,255,1) 0%, rgba(54,243,243,1) 16%, rgba(153,251,251,1) 61%, rgba(208,252,252,1) 83%, rgba(255,255,255,1) 93%);
 }
 
 .about-skillcards {
