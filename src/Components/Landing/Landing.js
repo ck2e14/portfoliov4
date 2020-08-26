@@ -4,15 +4,13 @@ import './Landing.css'
 const Landing = () => {
    return (
       <div className="landing-container">
-
-         <div className="blue-bg"></div>
          
          <div className="my-name">
-            <span> Hi, I'm Chris. </span>
+             Hi, I'm Chris. 
          </div>
 
          <div className="tagline">
-            I design & develop web apps to help make people's lives easier.
+            I design <span>&</span> develop web apps to help make people<span>'</span>s lives easier.
          </div>
 
       </div>

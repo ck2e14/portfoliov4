@@ -1,21 +1,25 @@
 .landing-container {
    height: 100%;
    width: 100%;
+   padding-left: 5%;
 }
 
 .my-name {
    position: relative;
-   top: 25%;
+   top: 40%;
    left: 50%;
    transform: translate(-50%);
    /* border-radius: .5vw; */
-   height: 30%;
-   width: 70%;
+   height: fit-content;
+   width: 80%;
+   border-bottom: 2px solid rgb(31, 31, 31);
    /* background-color: #00FFFF; */
    /* background: linear-gradient(180deg, #ffffff 70%, #00FFFF 50%); */
    font-size: 9vw;
    color: rgb(80, 80, 80);  
    transition: all .25s;;
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+   animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 .my-name span {
@@ -24,34 +28,50 @@
    left: 5%;
 }
 
-.blue-bg {
-   position: absolute;
-   top: 44%;
-   left: 45%;
-   transform: translate(-50%);
-   border-radius: .5vw;
-   height: 12%;
-   width: 60%;
-   background-color: #fbff00;
-   
-   /* background: linear-gradient(180deg, #ffffff 70%, #00FFFF 50%); */
-   font-size: 9vw;
-   color: rgb(80, 80, 80);  
-   transition: all .25s;
-}
-
 .tagline {
    position: relative;
-   top: 23%;
-   left: 54%;
+   top: 40%;
+   left: 50%;
    transform: translate(-50%);
    width: fit-content;
-   background-color: #fbff00;
    background-color: #00FFFF;
-
    color: rgb(80, 80, 80);  
    font-size: 2.5vw;
    border-radius: .5vw;
+   border-top-right-radius: 0;
+   border-top-left-radius: 0;
    padding: 1%;
    transition: all .25s;
+   -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+   animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+   animation-delay:.75s;
+}
+
+.tagline span {
+   color: white;
+}
+
+@-webkit-keyframes text-focus-in {
+   0% {
+      -webkit-filter: blur(12px);
+               filter: blur(12px);
+      opacity: 0;
+   }
+   100% {
+      -webkit-filter: blur(0px);
+               filter: blur(0px);
+      opacity: 1;
+   }
+   }
+   @keyframes text-focus-in {
+   0% {
+      -webkit-filter: blur(12px);
+               filter: blur(12px);
+      opacity: 0;
+   }
+   100% {
+      -webkit-filter: blur(0px);
+               filter: blur(0px);
+      opacity: 1;
+   }
 }
