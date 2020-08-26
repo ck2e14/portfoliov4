@@ -2,6 +2,62 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden !important;
-  font-family: 'Tinos', serif;  
+  overflow-x: hidden !important;
+  /* font-family: 'Tinos', serif;   */
+  font-family: 'Montserrat', sans-serif;
 }
+
+.shader {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all .25s;
+  z-index: 98;
+  animation: fade-in .25s ease-in-out;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+  }
+  100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+  }
+  100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

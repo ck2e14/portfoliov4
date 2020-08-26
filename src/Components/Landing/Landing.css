@@ -2,6 +2,21 @@
    height: 100%;
    width: 100%;
    padding-left: 5%;
+   z-index: 97;
+   font-family: 'Tinos', serif;  
+}
+
+.border-box {
+   position: absolute;
+   height: 60%;
+   width: 80%;
+   border-radius: 10px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border: 2px solid rgb(175, 175, 175);
+   animation: fade-in 2s;
+   /* padding:0 10px; */
 }
 
 .my-name {
@@ -9,12 +24,9 @@
    top: 40%;
    left: 50%;
    transform: translate(-50%);
-   /* border-radius: .5vw; */
    height: fit-content;
    width: 80%;
-   border-bottom: 2px solid rgb(31, 31, 31);
-   /* background-color: #00FFFF; */
-   /* background: linear-gradient(180deg, #ffffff 70%, #00FFFF 50%); */
+   border-bottom: 2px solid rgb(59, 59, 59);
    font-size: 9vw;
    color: rgb(80, 80, 80);  
    transition: all .25s;;
@@ -23,32 +35,32 @@
 }
 
 .my-name span {
-   position: absolute;
-   bottom: 7%;
-   left: 5%;
+   color: rgb(119, 119, 119);
 }
 
 .tagline {
    position: relative;
-   top: 40%;
    left: 50%;
-   transform: translate(-50%);
+   transform: translateX(-50%);
+   top: 40%;
    width: fit-content;
-   background-color: #00FFFF;
+   background-color: #36f3f3;
    color: rgb(80, 80, 80);  
-   font-size: 2.5vw;
-   border-radius: .5vw;
+   font-size: 2vw;
+   font-weight: bold;
+   border-radius: .25vw;
+   z-index: 91;
    border-top-right-radius: 0;
    border-top-left-radius: 0;
+   font-family: 'Montserrat', sans-serif;
    padding: 1%;
    transition: all .25s;
    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-   animation-delay:.75s;
 }
 
 .tagline span {
-   color: white;
+   color: rgb(119, 119, 119);
 }
 
 @-webkit-keyframes text-focus-in {
@@ -62,8 +74,9 @@
                filter: blur(0px);
       opacity: 1;
    }
-   }
-   @keyframes text-focus-in {
+}
+
+@keyframes text-focus-in {
    0% {
       -webkit-filter: blur(12px);
                filter: blur(12px);
@@ -72,6 +85,15 @@
    100% {
       -webkit-filter: blur(0px);
                filter: blur(0px);
+      opacity: 1;
+   }
+}
+
+@keyframes fade-in {
+   0% {
+      opacity: 0;
+   }
+   100% {
       opacity: 1;
    }
 }
