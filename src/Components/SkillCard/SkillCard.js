@@ -7,12 +7,10 @@ const SkillCard = props => {
 
    const { title, listArray } = props
 
-   const buildList = () => {
+   const buildList = () =>{
       if(!listArray) return
-      listArray.forEach(skill => {
-         return(
-            <li>{skill}</li>
-         )
+      return listArray.map((skill) => {
+         return <li key={skill}>{skill}</li>
       })
    }
 
@@ -32,7 +30,7 @@ const SkillCard = props => {
             <div className="skillcard-back">
                <div className="skills-list">
                   <ul>
-                     {buildList}
+                     {listArray && buildList()}
                   </ul>
                </div>
             </div>

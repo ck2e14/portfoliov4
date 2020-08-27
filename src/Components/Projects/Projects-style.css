@@ -1,0 +1,13 @@
+.vertical-projects-title {
+   font-size: 3vw;
+   position: absolute;
+   width: fit-content;
+   transform: rotate(270deg);
+   font-family: 'Tinos', serif;  
+   top: 28%;
+   left: 0.5%;
+   color: grey;
+   animation: fade-in 1s;
+   cursor: default;
+   background: linear-gradient(90deg, rgba(248,255,255,1) 0%, rgba(54,243,243,1) 16%, rgba(153,251,251,1) 61%, rgba(208,252,252,1) 83%, rgba(255,255,255,1) 93%);
+}

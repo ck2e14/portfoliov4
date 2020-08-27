@@ -1,22 +1,21 @@
 .navbar-container {
    position: fixed;
    left: 0; top: 0;
-   width: 3%;
+   width: 4%;
    min-width: 3%;
    height: 100%;
    z-index: 99;
    background-color: rgb(31, 31, 31);
-   box-shadow: 2px 2px 25px rgb(0, 0, 0);
+   box-shadow: 2px 2px 5px rgb(0, 0, 0);
    font-family: 'Montserrat', sans-serif;
    transition: all .3s;
    font-weight: bold;
 	-webkit-animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
    animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-   animation-delay: 2s;
 }
 
 .navbar-container:hover {
-   width: 10%;
+   width: 12%;
    min-width: 190px;
    background-color: rgb(31, 31, 31);
    box-shadow: 2px 2px 25px rgb(0, 0, 0);
@@ -47,7 +46,7 @@
    font-size: 2vh;
    width: 80%;   
    font-weight: bold;
-   transition: all .5s;
+   transition: all .25s;
    letter-spacing: 2px;
    text-align: left;
    text-decoration: none !important;
@@ -60,18 +59,19 @@ a {
 }
 
 .nav-item:hover {
-   color: white;
+   color: rgb(231, 164, 39);
 }
 
 .not-expanded {
    position: absolute;
    color: grey;
    transform: translateY(-50%);
+   transform-origin: 40px 20px;
    top: 50%;
-   font-size: 20px;
+   font-size: 30px;
    writing-mode: vertical-lr;
    width: 120px;
-   left: 30%;
+   left: 20%;
    height: fit-content;
    /* transition: .25s; */
    opacity: 1;

@@ -7,7 +7,7 @@ const NavBar = props => {
    const { onHover } = props
 
    return(
-      // TODO: Make the 'e x p l o r e' the active item
+      // TODO: Make the 'e x p l o r e' the active item?
       <div className="navbar-container" 
          onMouseEnter={() => onHover()} 
          onMouseLeave={() => onHover()}
@@ -19,11 +19,13 @@ const NavBar = props => {
 
          <div className="navbar-flex-container">
             
-            <Link to='about' className="nav-item">
+            <Link to='/about' className="nav-item">
                <div>ABOUT</div>
             </Link>
 
-            <div className="nav-item">PROJECTS</div>
+            <Link to='/projects' className="nav-item">
+               <div>PROJECTS</div>  
+            </Link>
 
             <div className="nav-item">RESUME</div>
 

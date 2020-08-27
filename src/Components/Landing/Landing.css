@@ -6,6 +6,22 @@
    font-family: 'Tinos', serif;  
 }
 
+.logo {
+   position: relative;
+   left: 5%;
+   top: 10%;
+   z-index: 101;
+   filter: invert(.6);
+   height: 40%;
+}
+
+.brushStroke {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
 .border-box {
    position: absolute;
    height: 60%;
@@ -17,6 +33,7 @@
    border: 2px solid rgb(175, 175, 175);
    animation: fade-in 2s;
    /* padding:0 10px; */
+   z-index: 97;
 }
 
 .my-name {
@@ -28,6 +45,7 @@
    width: 80%;
    border-bottom: 2px solid rgb(59, 59, 59);
    font-size: 9vw;
+   background: linear-gradient(90deg, rgba(248,255,255,1) 0%, rgb(202, 255, 255) 16%,   rgb(255, 233, 159) 73%, rgba(255,255,255,1) 93%);
    color: rgb(80, 80, 80);  
    transition: all .25s;;
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -36,18 +54,19 @@
 
 .my-name span {
    color: rgb(119, 119, 119);
+   font-size: 13vh;
 }
 
 .tagline {
-   position: relative;
-   left: 50%;
-   transform: translateX(-50%);
-   top: 40%;
+   position: absolute;
+   left: 15%;
+   /* transform: translateX(-50%); */
+   top: 58%;
    width: fit-content;
-   background-color: #36f3f3;
-   background: linear-gradient(90deg, rgba(248,255,255,1) 0%, rgba(54,243,243,1) 16%, rgba(153,251,251,1) 61%, rgba(208,252,252,1) 83%, rgba(255,255,255,1) 93%);
+   /* background-color: #36f3f3; */
+   /* background: linear-gradient(90deg, rgba(248,255,255,1) 0%, rgba(54,243,243,1) 16%, rgba(153,251,251,1) 61%, rgba(208,252,252,1) 83%, rgba(255,255,255,1) 93%); */
    color: rgb(80, 80, 80);  
-   font-size: 2vw;
+   font-size: 1.95vw;
    font-weight: bold;
    border-radius: .25vw;
    z-index: 91;
@@ -56,12 +75,12 @@
    font-family: 'Montserrat', sans-serif;
    padding: 1%;
    transition: all .25s;
-   -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-   animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+   /* -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+   animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; */
 }
 
 .tagline span {
-   color: rgb(119, 119, 119);
+   color: rgb(255, 0, 212);
 }
 
 @-webkit-keyframes text-focus-in {
