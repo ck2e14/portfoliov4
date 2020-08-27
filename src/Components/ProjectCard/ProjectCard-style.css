@@ -1,0 +1,22 @@
+.projectcard-container {
+   /* border: 2px solid rgb(70, 70, 70); */
+   width: 75%;
+   padding: 1%;
+   font-size: 2vw;
+   cursor: pointer;
+   border-radius: 10px;
+   text-align: right;
+   font-weight: bold;
+   transition: all .5s;
+}
+
+.projectcard-container:hover {
+   color: rgb(0, 0, 0);
+   font-weight: bold;
+   background: linear-gradient(90deg, 
+      rgba(248,255,255,1) 0%, 
+      rgb(254, 255, 202) 16%,   
+      rgb(158, 255, 171) 73%, 
+      rgba(255,255,255,1) 93%);
+}
+
