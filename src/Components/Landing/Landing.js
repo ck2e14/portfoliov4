@@ -15,6 +15,7 @@ const Landing = () => {
    }, [])
 
    return (
+      
       <div className="landing-container">
 
          <div className="border-box" style={{backgroundImage: `url:${brushStroke}`}}></div>
