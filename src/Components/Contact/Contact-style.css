@@ -1,0 +1,56 @@
+.vertical-contact-title {
+   font-size: 3vw;
+   position: absolute;
+   width: fit-content;
+   transform: rotate(270deg);
+   font-family: 'Tinos', serif;  
+   top: 27%;
+   left: 1.2%;
+   color: grey;
+   animation: fade-in 1s;
+   cursor: default;
+   background: linear-gradient(72deg, rgba(255,255,255,1) 4%, rgb(255, 241, 160) 54%, rgba(243,250,184,1) 75%, rgba(255,255,255,1) 93%);
+
+   
+}
+
+.contact-contents {
+   height: fit-content;
+   /* padding: 2%; */
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   width: 80%;
+   font-weight: bold;
+   background-color: rgb(255, 255, 255);
+   position: relative;
+   font-size: 1.6vw;
+}
+
+.contact-contents span {
+   /* font-size: 2vw; */
+   color: rgb(177, 130, 43);
+   background-color: rgb(226, 226, 226);
+   padding-left: .5%;
+   padding-right: .5%;
+}
+
+.contact-links {
+   position: absolute;
+   top: 70%;
+   left: 50%;
+   transform: translateX(-50%);
+   font-size: 1vw;
+}
+
+.icon {
+   height: 60px;
+   margin: 10px;
+   transition: all .25s;
+}
+
+.icon:hover {
+   filter: invert(.75)
+}
+

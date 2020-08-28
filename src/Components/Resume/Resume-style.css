@@ -1,0 +1,20 @@
+.vertical-resume-title {
+   font-size: 3vw;
+   position: absolute;
+   width: fit-content;
+   transform: rotate(270deg);
+   font-family: 'Tinos', serif;  
+   top: 28%;
+   left: 2.3%;
+   color: grey;
+   animation: fade-in 1s;
+   cursor: default;
+   background: linear-gradient(72deg, rgba(255,255,255,1) 4%, rgb(156, 255, 149) 54%, rgba(183,255,178,1) 75%, rgba(255,255,255,1) 93%);
+}
+
+.resume-container {
+   height: 95%;
+   top: 2%;
+   position: relative;
+   left: 25%;
+}

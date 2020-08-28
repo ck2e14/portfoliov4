@@ -27,9 +27,14 @@ const NavBar = props => {
                <div>PROJECTS</div>  
             </Link>
 
-            <div className="nav-item">RESUME</div>
+            <Link to='/resume' className="nav-item">
+               <div>RESUME</div>
+            </Link>
+            
+            <Link to='/contact' className="nav-item">
+               <div>CONTACT</div>
+            </Link>
 
-            <div className="nav-item">CONTACT</div>
 
          </div>
          

@@ -3,7 +3,9 @@ import './App.css';
 import Landing from './Components/Landing/Landing'
 import Navbar from './Components/NavBar/NavBar'
 import About from './Components/About/About'
+import Resume from './Components/Resume/Resume'
 import Projects from './Components/Projects/Projects'
+import Contact from './Components/Contact/Contact'
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -46,6 +48,13 @@ function App() {
               <Projects /> 
             </Route>
 
+            <Route path='/resume'>
+              <Resume /> 
+            </Route>
+
+            <Route path='/contact'>
+              <Contact /> 
+            </Route>
           </div>
 
         </Switch>

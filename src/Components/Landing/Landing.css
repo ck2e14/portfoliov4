@@ -4,6 +4,7 @@
    padding-left: 5%;
    z-index: 97;
    font-family: 'Tinos', serif;  
+
 }
 
 .logo {
@@ -14,13 +15,13 @@
    filter: invert(.6);
    height: 40%;
 }
-
+/* 
 .brushStroke {
    position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-}
+} */
 
 .border-box {
    position: absolute;
@@ -116,4 +117,10 @@
    100% {
       opacity: 1;
    }
+}
+
+@keyframes AnimationName {
+   0%{background-position:0% 91%}
+   50%{background-position:100% 10%}
+   100%{background-position:0% 91%}
 }

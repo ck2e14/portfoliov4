@@ -9,12 +9,11 @@ const Projects = () => {
 
    const handleCardClick = cardObj => {
       setActiveCard(cardObj)
-      console.log(cardObj)
    }
 
    const pebble = {
       title: 'Pebble Solutions Ltd',
-      content: 'Designed and created a mobile-responsive "brochure" style frontend for Pebble Solutions Ltd. Site maintained and updated via FTP. JavaScript React (hooks, router), HTML, vanilla CSS3.',
+      content: 'Commercial project. Designed and developed a mobile-responsive "brochure" style frontend for Pebble Solutions Ltd. Site maintained and updated via FTP. JavaScript React (hooks, router), HTML, vanilla CSS3. N.B Code authorised to be open-sourced by client.',
       link: 'https://pebblesolutions.com',
       codeLink: 'https://github.com/ck2e14/PebbleSolutions'
    }
@@ -41,7 +40,7 @@ const Projects = () => {
 
    const vatCalc = {
       title: 'VAT Calculator',
-      content: 'Dynamic VAT calculator, with adjustable VAT rates. Can enter multiple values for sum or single value VAT. Rounds using appropriate JavaScript ( i.e. not .toFixed() ) and formats toLocaleString(). Built in React.js (hooks, controlled forms), vanilla CSS3 and HTML.',
+      content: 'Dynamic VAT calculator, with adjustable VAT rates. Can enter multiple values for sum or single value VAT. Rounds upwards appropriately rather than truncating-i.e. not .toFixed()-and formats toLocaleString(). Built in React.js (hooks, controlled forms), vanilla CSS3 and HTML.',
       link: 'https://cook-dev-test.netlify.app/',
       codeLink: 'https://github.com/ck2e14/cook-test'
    }
@@ -129,9 +128,7 @@ const Projects = () => {
                            </div>
 
                         </div>
-                     
                      : 
-
                         <div className="no-card-selected expanded-title">
                            Select a project.
                         </div>

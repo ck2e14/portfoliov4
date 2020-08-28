@@ -24,6 +24,11 @@
    color: black;
 }
 
+.link {
+   color: rgb(71, 71, 71);
+   text-decoration: none;
+}
+
 .vertical-title {
    font-size: 3vw;
    position: absolute;

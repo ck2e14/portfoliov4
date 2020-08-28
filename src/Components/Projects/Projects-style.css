@@ -28,9 +28,12 @@
    display: flex;
    flex-direction: column;
    width: 100%;
-   align-items: center;
+   height: 30%;
+   line-height: .9;
+   align-items: flex-end;
    justify-content: space-evenly;
    flex:1;
+   z-index: 10;
 }
 
 /* EXPANDED PANEL CSS BELOW */
@@ -47,43 +50,47 @@
    width: 98%;
    top: 50%; left: 50%;
    transform: translate(-50%, -50%);
-   /* border: 2px solid orange; */
+   animation: fade-in .5s;
 }
 
 .expanded-title {
-   width: 100%;
+   width: fit-content;
    text-align: center;
    top: 20%;
+   left: 50%;
+   transform: translateX(-50%);
+   padding: 5%;
+   border-radius: .5vw;
    position: relative;
-   /* font-weight: bold; */
-   font-family: 'Tinos', serif;  
+   text-transform: uppercase;
+   font-size: 2.5vw;
+   font-weight: bold;
+   /* font-family: 'Tinos', serif;   */
+   color: rgb(143, 143, 143);
+
+   /* background: linear-gradient(90deg, 
+   rgba(248,255,255,1) 0%, 
+   rgb(254, 255, 202) 16%,   
+   rgb(158, 255, 171) 73%, 
+   rgba(255,255,255,1) 93%); */
+   background-color: rgb(46, 46, 46);
 
 }
 
 .no-card-selected {
-   /* height: 100%; */
-   padding-top: 40%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   color: rgb(92, 92, 92);
 }
 
 .expandedCard-blurb {
    font-size: 1.5vw;
    position: relative;
+   font-weight: bold;
    top: 40%;
    width: 80%;
    left: 50%;
    transform: translate(-50%, -50%);
-}
-
-a {
-   text-decoration: none;
-   transition: all .25s;
-   font-weight: bold;
-   padding: 2%;
-}
-
-a:hover {
-   color: rgb(255, 255, 255);
-   background-color: rgb(236, 122, 122);
 }
 
 .expandedCard-links {
@@ -91,4 +98,19 @@ a:hover {
    text-align: center;
    text-transform: uppercase;
    font-size: 1vw;
+   position: absolute;
+   margin-top: -5%;
+}
+
+.expandedCard-links a {
+   text-decoration: none;
+   transition: all .25s;
+   font-weight: bold;
+   color: rgb(68, 68, 68);
+   padding: 2%;
+}
+
+.expandedCard-links a:hover {
+   color: rgb(255, 255, 255);
+   background-color: rgb(236, 122, 122);
 }
