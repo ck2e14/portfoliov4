@@ -13,7 +13,7 @@ const NavBar = props => {
          >
 
          <div className="not-expanded">
-            M E N U
+            <h2 className="">M E N U</h2>
          </div>
 
          <div className="navbar-flex-container">
