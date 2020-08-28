@@ -6,7 +6,8 @@ import About from './Components/About/About'
 import Resume from './Components/Resume/Resume'
 import Projects from './Components/Projects/Projects'
 import Contact from './Components/Contact/Contact'
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Switch } from "react-router-dom";
+
 
 function App() {
 
@@ -26,7 +27,7 @@ function App() {
   return (
     <>
 
-      <BrowserRouter>
+      <HashRouter>
 
         <Switch>
 
@@ -59,7 +60,7 @@ function App() {
 
         </Switch>
 
-      </BrowserRouter>
+      </HashRouter>
 
       <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"/>
