@@ -58,6 +58,10 @@ function App() {
               <Landing isDarkMode={isDarkMode} /> 
             </Route>
 
+            <Route path='/'>
+              <div>ERROR 404</div>
+            </Route>
+
             <Route path='/about'>
               <About isDarkMode={isDarkMode}/> 
             </Route>
