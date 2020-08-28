@@ -5,6 +5,7 @@ import ProjectCard from '../ProjectCard/ProjectCard'
 const Projects = props => {
    // TODO: based on activeCard, keep that ProjectCard highlighted 
 
+   const [ activeCard, setActiveCard ] = useState(false)
    const { isDarkMode } = props
 
    useEffect(() => {
@@ -12,7 +13,10 @@ const Projects = props => {
       // const textToChange = document.getElementsByClassName('text') 
       if(isDarkMode) {
          verticalTitles[0].classList.add('night-titles')
-         // textToChange[0].classList.add('night-text')
+         // if(activeCard) { 
+         //    document.getElementsByClassName('text')[0].classList.add('night-text') 
+         // }
+         
       }
       if(!isDarkMode) {
          verticalTitles[0].classList.remove('night-titles')
@@ -20,10 +24,10 @@ const Projects = props => {
       }
    }, [isDarkMode])
 
-   const [ activeCard, setActiveCard ] = useState()
 
    const handleCardClick = cardObj => {
       setActiveCard(cardObj)
+      document.getElementsByClassName('text')[0].classList.add('night-text') 
    }
 
    const pebble = {
@@ -98,23 +102,23 @@ const Projects = props => {
 
                   <div className="projectCards-container-flex">
 
-                     <ProjectCard project={pebble} handleClick={handleCardClick}/>
+                     <ProjectCard project={pebble} isDarkMode={isDarkMode} handleClick={handleCardClick}/>
 
-                     <ProjectCard project={hygenik} handleClick={handleCardClick}/>
+                     <ProjectCard project={hygenik} isDarkMode={isDarkMode} handleClick={handleCardClick}/>
 
-                     <ProjectCard project={eXchange} handleClick={handleCardClick}/>
+                     <ProjectCard project={eXchange} isDarkMode={isDarkMode} handleClick={handleCardClick}/>
 
-                     <ProjectCard project={mapStar} handleClick={handleCardClick}/>
+                     <ProjectCard project={mapStar} isDarkMode={isDarkMode} handleClick={handleCardClick}/>
 
-                     <ProjectCard project={vatCalc} handleClick={handleCardClick}/>
+                     <ProjectCard project={vatCalc} isDarkMode={isDarkMode} handleClick={handleCardClick}/>
 
-                     <ProjectCard project={coronahvirus} handleClick={handleCardClick}/>
+                     <ProjectCard project={coronahvirus} isDarkMode={isDarkMode} handleClick={handleCardClick}/>
 
-                     <ProjectCard project={rps} handleClick={handleCardClick}/>
+                     <ProjectCard project={rps} isDarkMode={isDarkMode} handleClick={handleCardClick}/>
 
-                     <ProjectCard project={spaceX} handleClick={handleCardClick}/>
+                     <ProjectCard project={spaceX} isDarkMode={isDarkMode} handleClick={handleCardClick}/>
 
-                     <ProjectCard project={portfolio} handleClick={handleCardClick}/>
+                     <ProjectCard project={portfolio} isDarkMode={isDarkMode} handleClick={handleCardClick}/>
 
                      </div>
 

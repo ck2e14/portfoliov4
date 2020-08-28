@@ -7,7 +7,9 @@ import Resume from './Components/Resume/Resume'
 import Projects from './Components/Projects/Projects'
 import Contact from './Components/Contact/Contact'
 import DarkModeToggle from './Components/DarkModeToggle/DarkModeToggle'
-import { BrowserRouter, HashRouter, Route, Switch } from "react-router-dom";
+import { isMobile } from "react-device-detect";
+import { HashRouter, Route, Switch } from "react-router-dom";
+// TODO: ADD COMPONENT LIBRARY TO PROJECTS
 
 function App() {
 
@@ -25,6 +27,17 @@ function App() {
     }, 5500);
   }, [])
 
+  if(isMobile) {
+    return(
+      <div className="is-mobile">I am working to bring a mobile version of this website in the very near future - check back soon! </div>
+    )
+  }
+
+  const handleDarkModeToggle = () => {
+    setIsDarkMode(!isDarkMode)
+    
+  }
+
   return (
     <>
 
@@ -38,7 +51,7 @@ function App() {
 
             { paintNavBar && <Navbar onHover={handleHoverNavBar} /> }
 
-            <DarkModeToggle handleToggle={setIsDarkMode} isCurrentlyDark={isDarkMode} />
+            { paintNavBar && <DarkModeToggle handleToggle={handleDarkModeToggle} isCurrentlyDark={isDarkMode} /> }
 
             <Route exact path='/'>
               <Landing isDarkMode={isDarkMode} /> 

@@ -3,24 +3,21 @@ import './DarkModeToggle-style.css'
 
 const DarkModeToggle = props => {
 
-   // const [ classNames, setClassNames ] = useState(["toggle"])
    const [ toggle, setToggle ] = useState('')
+   // eslint-disable-next-line
+   const { handleToggle, isCurrentlyDark } = props
 
    const toggleMode = () => {
-      props.handleToggle(!props.isCurrentlyDark)
+      handleToggle() 
       const background = document.getElementById('top-level-container')
-      const logoElem = document.getElementById('logo')
-      const toggleTextElem = document.getElementById('toggle-option-text')
-
+      // The rest of the night-mode classList adding is done in individual component's useEffects
       if(toggle === "") {
          setToggle('active')
          background.classList.add('night')
-
       }
       if(toggle === "active"){
          setToggle("")
          background.classList.remove('night')
-
       } 
    }
 

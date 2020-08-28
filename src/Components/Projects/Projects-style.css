@@ -3,8 +3,6 @@
    width: 100%;
    position: relative;
    display: flex;
-
-   /* border: 2px solid green; */
 }
 
 .vertical-projects-title {
@@ -18,7 +16,12 @@
    color: grey;
    animation: fade-in 1s;
    cursor: default;
-   background: linear-gradient(90deg, rgba(248,255,255,1) 0%, rgba(54,243,243,1) 16%, rgba(153,251,251,1) 61%, rgba(208,252,252,1) 83%, rgba(255,255,255,1) 93%);
+   background: linear-gradient(90deg, 
+      rgba(248,255,255,1) 0%, 
+      rgba(54,243,243,1) 16%, 
+      rgba(153,251,251,1) 61%, 
+      rgba(208,252,252,1) 83%, 
+      rgba(255,255,255,1) 93%);
 }
 
 .projectCards-container-flex {

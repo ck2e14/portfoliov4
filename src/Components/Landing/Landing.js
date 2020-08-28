@@ -4,15 +4,30 @@ import Typical from 'react-typical'
 // import gitLogo from '../../Assets/Media/git-image.png'
 import brushStroke from '../../Assets/Media/brushStroke.png'
 
-const Landing = () => {
+const Landing = props => {
 
    const [ renderTypewriter, setRenderTypewriter ] = useState(false)
+   const { isDarkMode } = props
 
    useEffect(() => {
       setTimeout(() => {
          setRenderTypewriter(true)
       }, 1900);
    }, [])
+
+   useEffect(() => {
+      // const verticalTitles = document.getElementsByClassName('vert')
+      const textToChange = document.getElementsByClassName('watercolor-bg') 
+      console.log(textToChange)
+      if(isDarkMode) {
+         // verticalTitles[0].classList.add('night-titles')
+         textToChange[0].classList.add('hide-watercolor-bg')
+      }
+      if(!isDarkMode) {
+         // verticalTitles[0].classList.remove('night-titles')
+         textToChange[0].classList.remove('hide-watercolor-bg')
+      }
+   }, [isDarkMode])
 
    return (
       
@@ -29,7 +44,7 @@ const Landing = () => {
             />
          }
 
-         <div className="my-name">
+         <div className="my-name watercolor-bg">
             Hi<span>,</span> I<span>'</span>m Chris<span>.</span>
          </div>
 
