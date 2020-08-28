@@ -8,14 +8,11 @@ const Resume = props => {
 
    useEffect(() => {
       const verticalTitles = document.getElementsByClassName('vert')
-      // const textToChange = document.getElementsByClassName('text') 
       if(isDarkMode) {
          verticalTitles[0].classList.add('night-titles')
-         // textToChange[0].classList.add('night-text')
       }
       if(!isDarkMode) {
          verticalTitles[0].classList.remove('night-titles')
-         // textToChange[0].classList.remove('night-text')
       }
    }, [isDarkMode])
 

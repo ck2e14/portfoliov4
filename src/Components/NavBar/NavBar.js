@@ -7,7 +7,6 @@ const NavBar = props => {
    const { onHover } = props
 
    return(
-      // TODO: Make the 'e x p l o r e' the active item?
       <div className="navbar-container" 
          onMouseEnter={() => onHover()} 
          onMouseLeave={() => onHover()}

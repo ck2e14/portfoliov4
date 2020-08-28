@@ -6,7 +6,6 @@ const ProjectCard = props => {
    const { project, handleClick, isDarkMode } = props
 
    const cardClick = () => {
-      // document.getElementById(`${project.title}`).style.fontWeight = 'bold'
       handleClick(project)
    }
 

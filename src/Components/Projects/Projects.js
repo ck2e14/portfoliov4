@@ -10,17 +10,11 @@ const Projects = props => {
 
    useEffect(() => {
       const verticalTitles = document.getElementsByClassName('vert')
-      // const textToChange = document.getElementsByClassName('text') 
       if(isDarkMode) {
          verticalTitles[0].classList.add('night-titles')
-         // if(activeCard) { 
-         //    document.getElementsByClassName('text')[0].classList.add('night-text') 
-         // }
-         
       }
       if(!isDarkMode) {
          verticalTitles[0].classList.remove('night-titles')
-         // textToChange[0].classList.remove('night-text')
       }
    }, [isDarkMode])
 
@@ -147,12 +141,12 @@ const Projects = props => {
                                     </a> 
                                  }
                                  
-                                 <a href={activeCard.codeLink} 
-                                    className="live-link" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer">
-                                       View {activeCard.title} code
-                                 </a> 
+                                    <a href={activeCard.codeLink} 
+                                       className="live-link" 
+                                       target="_blank" 
+                                       rel="noopener noreferrer">
+                                          View {activeCard.title} code
+                                    </a> 
                               </div>
 
                            </div>

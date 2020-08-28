@@ -16,15 +16,11 @@ const Landing = props => {
    }, [])
 
    useEffect(() => {
-      // const verticalTitles = document.getElementsByClassName('vert')
       const textToChange = document.getElementsByClassName('watercolor-bg') 
-      console.log(textToChange)
       if(isDarkMode) {
-         // verticalTitles[0].classList.add('night-titles')
          textToChange[0].classList.add('hide-watercolor-bg')
       }
       if(!isDarkMode) {
-         // verticalTitles[0].classList.remove('night-titles')
          textToChange[0].classList.remove('hide-watercolor-bg')
       }
    }, [isDarkMode])

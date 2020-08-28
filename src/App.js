@@ -29,13 +29,14 @@ function App() {
 
   if(isMobile) {
     return(
-      <div className="is-mobile">I am working to bring a mobile version of this website in the very near future - check back soon! </div>
+      <div className="is-mobile">
+        I am working to bring a mobile version of this website in the very near future - check back soon! 
+      </div>
     )
   }
 
   const handleDarkModeToggle = () => {
     setIsDarkMode(!isDarkMode)
-    
   }
 
   return (
