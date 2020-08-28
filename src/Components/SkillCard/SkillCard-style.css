@@ -56,4 +56,6 @@
 
 li {
    cursor: default;
+   font-size: 1.25vw;
+   color: rgb(92, 92, 92);
 }

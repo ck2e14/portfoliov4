@@ -9,7 +9,7 @@
    color: grey;
    animation: fade-in 1s;
    cursor: default;
-   background: linear-gradient(72deg, rgba(255,255,255,1) 4%, rgb(255, 241, 160) 54%, rgba(243,250,184,1) 75%, rgba(255,255,255,1) 93%);
+   background: linear-gradient(72deg, rgba(255,255,255,1) 4%, rgb(255, 233, 133) 54%, rgb(255, 237, 156) 75%, rgba(255,255,255,1) 93%);
 
    
 }
