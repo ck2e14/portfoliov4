@@ -20,7 +20,7 @@ const Projects = () => {
 
    const hygenik = { 
       title: 'Hygenik',
-      content: 'Plots FSA hygiene ratings data for food-serving premises on a map and side-panel. Uses current location or search term. Users can blacklist sites. React.js (hooks, router), JavaScript (ES6, Async), CSS3, HTNL, JWT-Authentication, Rails API.',
+      content: "Plots Government's FSA hygiene ratings data for food-serving premises on a map and side-panel. Uses current location or search term. Users can blacklist sites. React.js (hooks, router), JavaScript (ES6, Async), CSS3, HTNL, JWT-Authentication, Rails API.",
       link: 'https://mod5-frontend.herokuapp.com/',
       codeLink: 'https://github.com/ck2e14/Mod5ProjectBackend'
    }
@@ -40,7 +40,7 @@ const Projects = () => {
 
    const vatCalc = {
       title: 'VAT Calculator',
-      content: 'Dynamic VAT calculator, with adjustable VAT rates. Can enter multiple values for sum or single value VAT. Rounds upwards appropriately rather than truncating-i.e. not .toFixed()-and formats toLocaleString(). Built in React.js (hooks, controlled forms), vanilla CSS3 and HTML.',
+      content: 'Dynamic VAT calculator, with adjustable VAT rates. Can enter multiple values for summed-/single-value VAT. Rounds upwards appropriately rather than truncating, i.e. not .toFixed(), and formats toLocaleString(). Built in React.js (hooks, controlled forms), vanilla CSS3 and HTML.',
       link: 'https://cook-dev-test.netlify.app/',
       codeLink: 'https://github.com/ck2e14/cook-test'
    }

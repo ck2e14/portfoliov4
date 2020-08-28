@@ -9,12 +9,15 @@
    color: grey;
    animation: fade-in 1s;
    cursor: default;
-   background: linear-gradient(72deg, rgba(255,255,255,1) 4%, rgb(156, 255, 149) 54%, rgba(183,255,178,1) 75%, rgba(255,255,255,1) 93%);
+   background: linear-gradient(72deg, 
+      rgba(255,255,255,1) 4%, 
+      rgb(156, 255, 149) 54%, 
+      rgba(183,255,178,1) 75%, 
+      rgba(255,255,255,1) 93%);
 }
 
 .resume-container {
-   height: 95%;
-   top: 2%;
+   height: 100%;
    position: relative;
-   left: 25%;
+   overflow: visible;
 }

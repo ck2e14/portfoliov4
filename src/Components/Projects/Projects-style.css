@@ -39,14 +39,15 @@
 /* EXPANDED PANEL CSS BELOW */
 .projects-expandedCards-container {
    flex:1.75;
-   /* border: 2px solid rgb(46, 46, 46); */
    border-top-right-radius: .5vw;
+   position: relative;
    border-bottom-right-radius: .5vw;
 }
 
 .expandedCards-content {
-   position: relative;
+   position: absolute;
    height: 98%;
+   /* border: 2px solid red; */
    width: 98%;
    top: 50%; left: 50%;
    transform: translate(-50%, -50%);
@@ -65,14 +66,12 @@
    text-transform: uppercase;
    font-size: 2.5vw;
    font-weight: bold;
-   /* font-family: 'Tinos', serif;   */
    color: rgb(143, 143, 143);
-
    /* background: linear-gradient(90deg, 
-   rgba(248,255,255,1) 0%, 
-   rgb(254, 255, 202) 16%,   
-   rgb(158, 255, 171) 73%, 
-   rgba(255,255,255,1) 93%); */
+      rgba(248,255,255,1) 0%, 
+      rgb(254, 255, 202) 16%,   
+      rgb(158, 255, 171) 73%, 
+      rgba(255,255,255,1) 93%); */
    background-color: rgb(46, 46, 46);
 
 }
@@ -81,13 +80,14 @@
    top: 50%;
    transform: translate(-50%, -50%);
    color: rgb(92, 92, 92);
+   text-transform: capitalize;
 }
 
 .expandedCard-blurb {
    font-size: 1.5vw;
    position: relative;
    font-weight: bold;
-   top: 40%;
+   top: 45%;
    width: 80%;
    left: 50%;
    transform: translate(-50%, -50%);

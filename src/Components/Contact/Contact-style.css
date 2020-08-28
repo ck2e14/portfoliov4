@@ -21,24 +21,26 @@
    left: 50%;
    transform: translate(-50%, -50%);
    text-align: center;
-   width: 80%;
+   width:85%;
    font-weight: bold;
    background-color: rgb(255, 255, 255);
    position: relative;
    font-size: 1.6vw;
+   line-height: 1.8;
 }
 
 .contact-contents span {
    /* font-size: 2vw; */
-   color: rgb(177, 130, 43);
-   background-color: rgb(226, 226, 226);
+   color: rgb(80, 80, 80);
+   background-color: rgb(122, 252, 234);
    padding-left: .5%;
    padding-right: .5%;
+   border-radius: .25vw;
 }
 
 .contact-links {
    position: absolute;
-   top: 70%;
+   top: 80%;
    left: 50%;
    transform: translateX(-50%);
    font-size: 1vw;

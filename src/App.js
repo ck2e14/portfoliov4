@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setPaintNavbar(true)
-    }, 5000);
+    }, 6000);
   }, [])
 
   return (

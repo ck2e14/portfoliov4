@@ -11,7 +11,7 @@ const Resume = () => {
 
                <div className="resume-container">
 
-               <embed src={resumeFile} width="53%" height="100%"/>
+               <embed src={resumeFile} width="100%" height="100%"/>
 
                </div>
 

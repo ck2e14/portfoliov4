@@ -16,7 +16,7 @@
 
 .navbar-container:hover {
    width: 12%;
-   min-width: 190px;
+   /* min-width: 190px; */
    background-color: rgb(31, 31, 31);
    box-shadow: 2px 2px 25px rgb(0, 0, 0);
 }
@@ -48,7 +48,7 @@
    width: fit-content;   
    font-weight: bold;
    transition: all .25s;
-   letter-spacing: 2px;
+   /* letter-spacing: 2px; */
    text-align: left;
    text-decoration: none !important;
    z-index: 99;
@@ -84,7 +84,7 @@ a {
 }
 
 .nav-item:hover {
-   color: rgb(0, 247, 255);
+   color: rgb(88, 220, 224);
    /* color: rgb(212, 212, 212); */
    /* top: -2%;
    left: 2%; */
@@ -94,9 +94,9 @@ a {
    position: absolute;
    color: grey;
    transform: translateY(-50%);
-   transform-origin: 40px 20px;
+   /* transform-origin: 40px 20px; */
    top: 50%;
-   font-size: 30px;
+   font-size: 2vw;
    writing-mode: vertical-lr;
    width: 120px;
    left: 20%;
