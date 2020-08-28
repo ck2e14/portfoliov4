@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setPaintNavbar(true)
-    }, 5500);
+    }, 500);
   }, [])
 
   if(isMobile) {

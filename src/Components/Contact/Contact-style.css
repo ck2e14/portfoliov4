@@ -18,23 +18,21 @@
 
 .contact-contents {
    height: fit-content;
-   /* padding: 2%; */
    top: 40%;
    left: 50%;
    transform: translate(-50%, -50%);
    text-align: center;
    width:85%;
    font-weight: bold;
-
    position: relative;
    font-size: 1.6vw;
    line-height: 1.8;
 }
 
 .contact-contents span {
-   /* font-size: 2vw; */
-   color: rgb(80, 80, 80);
-   background-color: rgb(122, 252, 234);
+   color: rgb(129, 129, 129);
+   /* background-color: rgba(151, 212, 204, 0.438); */
+   font-size: 2vw;
    padding-left: .5%;
    padding-right: .5%;
    border-radius: .25vw;
@@ -49,8 +47,8 @@
 }
 
 .icon {
-   height: 60px;
-   margin: 10px;
+   height: 40px;
+   margin: 40px;
    transition: all .25s;
 }
 

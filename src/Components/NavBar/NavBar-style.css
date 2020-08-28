@@ -1,7 +1,7 @@
 .navbar-container {
    position: fixed;
    left: 0; top: 0;
-   width: 4%;
+   width: 5%;
    min-width: 3%;
    height: 100%;
    z-index: 99;
@@ -22,11 +22,21 @@
 }
 
 .navbar-container:hover > .navbar-flex-container {
-   opacity: 1;
+   display: flex;
 }
 
+.shader {
+   position: fixed;
+   height: 100vh;
+   width: 100vw;
+   background-color: rgba(0, 0, 0, 0.6);
+   transition: all .25s;
+   z-index: 98;
+   animation: fade-in .25s ease-in-out;
+} 
+
 .navbar-flex-container {
-   display: flex;
+   display: none;
    flex-direction: column;
    justify-content: space-between;
    align-items: left;
@@ -37,8 +47,8 @@
    top: 50%;
    transform: translateY(-50%);
    color: rgb(119, 119, 119);
-   opacity: 0;
-   transition: all .25s;
+   animation: fade-in 2s;
+   /* transition: all .25s; */
 }
 
 .nav-item {
@@ -98,10 +108,9 @@ a {
    top: 50%;
    font-size: 2vw;
    writing-mode: vertical-lr;
-   width: 120px;
-   /* left: -80%; */
+   width: fit-content;
+   left: -20%;
    height: fit-content;
-   /* transition: .25s; */
    opacity: 1;
    letter-spacing: .4vh;
    animation: fade-in 1s;
