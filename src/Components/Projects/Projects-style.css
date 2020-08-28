@@ -47,7 +47,6 @@
 .expandedCards-content {
    position: absolute;
    height: 98%;
-   /* border: 2px solid red; */
    width: 98%;
    top: 50%; left: 50%;
    transform: translate(-50%, -50%);

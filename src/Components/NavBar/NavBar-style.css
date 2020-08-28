@@ -93,13 +93,13 @@ a {
 .not-expanded {
    position: absolute;
    color: grey;
-   transform: translateY(-50%);
+   transform: translateY(-50%) rotate(180deg);
    /* transform-origin: 40px 20px; */
    top: 50%;
    font-size: 2vw;
    writing-mode: vertical-lr;
    width: 120px;
-   left: 20%;
+   left: -80%;
    height: fit-content;
    /* transition: .25s; */
    opacity: 1;

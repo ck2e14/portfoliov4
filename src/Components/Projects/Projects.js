@@ -40,7 +40,7 @@ const Projects = () => {
 
    const vatCalc = {
       title: 'VAT Calculator',
-      content: 'Dynamic VAT calculator, with adjustable VAT rates. Can enter multiple values for summed-/single-value VAT. Rounds upwards appropriately rather than truncating, i.e. not .toFixed(), and formats toLocaleString(). Built in React.js (hooks, controlled forms), vanilla CSS3 and HTML.',
+      content: 'Dynamic VAT calculator, with adjustable VAT rates. Can enter multiple values for summed-/single-value VAT. Rounds upwards appropriately rather than truncating, i.e. not .toFixed(), and formats toLocaleString(). Features Toggle-able dark theme. Built in React.js (hooks, controlled forms), vanilla CSS3 and HTML.',
       link: 'https://cook-dev-test.netlify.app/',
       codeLink: 'https://github.com/ck2e14/cook-test'
    }
