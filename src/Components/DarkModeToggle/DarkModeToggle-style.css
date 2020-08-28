@@ -30,7 +30,7 @@
 }
 
 .night {
-   background-color: rgb(31, 31, 31);
+   background-color: #1f1f1f;
    transition: all .25s;
 }
 

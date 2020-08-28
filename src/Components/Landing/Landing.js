@@ -12,7 +12,7 @@ const Landing = props => {
    useEffect(() => {
       setTimeout(() => {
          setRenderTypewriter(true)
-      }, 1900);
+      }, 1300);
    }, [])
 
    useEffect(() => {
@@ -33,7 +33,7 @@ const Landing = props => {
 
          { renderTypewriter && 
             <Typical
-            steps={["I design and develop web apps to help make people's lives easier. :)"]}
+            steps={["I design and develop web apps to try to make people's lives easier. :)"]}
             loop={1}
             // wrapper="p"
             className='tagline'

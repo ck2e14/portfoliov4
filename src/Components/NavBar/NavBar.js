@@ -22,8 +22,8 @@ const NavBar = props => {
                <div>ABOUT</div>
             </Link>
 
-            <Link to='/projects' className="nav-item">
-               <div>PROJECTS</div>  
+            <Link to='/portfolio' className="nav-item">
+               <div>PORTFOLIO</div>  
             </Link>
 
             <Link to='/resume' className="nav-item">

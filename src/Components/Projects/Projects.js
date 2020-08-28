@@ -88,7 +88,7 @@ const Projects = props => {
       <>
          <div className="content-container text">
 
-         <div className="vertical-projects-title vert">P R O J E C T S</div>
+         <div className="vertical-projects-title vert">P O R T F O L I O</div>
 
             <div className="content-border">
 
@@ -154,7 +154,7 @@ const Projects = props => {
                         </div>
                      : 
                         <div className="no-card-selected expanded-title">
-                           Select a project.
+                           Select a Project.
                         </div>
                      }
 

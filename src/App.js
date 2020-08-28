@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setPaintNavbar(true)
-    }, 500);
+    }, 5700);
   }, [])
 
   if(isMobile) {
@@ -62,7 +62,7 @@ function App() {
               <About isDarkMode={isDarkMode}/> 
             </Route>
 
-            <Route path='/projects'>
+            <Route path='/portfolio'>
               <Projects isDarkMode={isDarkMode} /> 
             </Route>
 
