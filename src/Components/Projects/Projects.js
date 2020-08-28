@@ -65,6 +65,12 @@ const Projects = () => {
       codeLin: 'https://github.com/ck2e14/spaceX-vehicles'
    }
 
+   const portfolio = {
+      title: 'Portfolio Website',
+      content: 'This site is built in JavaScript React, HTML and CSS to showcase my interests, projects and motivations and is itself intended to demonstrate them. If you would like a bespoke site like this one or totally different, please get in touch!',
+      codeLink: 'https://github.com/ck2e14/portfoliov4'
+   }
+
    return(
       <>
          <div className="content-container">
@@ -93,6 +99,8 @@ const Projects = () => {
 
                      <ProjectCard project={spaceX} handleClick={handleCardClick}/>
 
+                     <ProjectCard project={portfolio} handleClick={handleCardClick}/>
+
                      </div>
 
                   <div className="projects-expandedCards-container">
@@ -111,12 +119,15 @@ const Projects = () => {
                               <br/><br/><br/>
 
                               <div className="expandedCard-links">
-                                 <a href={activeCard.link} 
+                                 {activeCard.link &&
+                                    <a href={activeCard.link} 
                                     className="live-link" 
                                     target="_blank" 
                                     rel="noopener noreferrer">
                                        Visit {activeCard.title}
-                                 </a> 
+                                    </a> 
+                                 }
+                                 
                                  <a href={activeCard.codeLink} 
                                     className="live-link" 
                                     target="_blank" 

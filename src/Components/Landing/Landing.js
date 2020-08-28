@@ -28,15 +28,6 @@ const Landing = () => {
             />
          }
 
-         {/* { render2ndTypewriter && 
-            <Typical
-            steps={["I design and develop web apps that help make people's lives easier."]}
-            loop={Infinity}
-            wrapper="p"
-            className='my-name'
-            />
-         } */}
-
          <div className="my-name">
             Hi<span>,</span> I<span>'</span>m Chris<span>.</span>
          </div>
