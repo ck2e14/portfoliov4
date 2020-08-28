@@ -1,9 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Projects-style.css'
 import ProjectCard from '../ProjectCard/ProjectCard'
 
-const Projects = () => {
+const Projects = props => {
    // TODO: based on activeCard, keep that ProjectCard highlighted 
+
+   const { isDarkMode } = props
+
+   useEffect(() => {
+      const verticalTitles = document.getElementsByClassName('vert')
+      // const textToChange = document.getElementsByClassName('text') 
+      if(isDarkMode) {
+         verticalTitles[0].classList.add('night-titles')
+         // textToChange[0].classList.add('night-text')
+      }
+      if(!isDarkMode) {
+         verticalTitles[0].classList.remove('night-titles')
+         // textToChange[0].classList.remove('night-text')
+      }
+   }, [isDarkMode])
 
    const [ activeCard, setActiveCard ] = useState()
 
@@ -73,9 +88,9 @@ const Projects = () => {
 
    return(
       <>
-         <div className="content-container">
+         <div className="content-container text">
 
-         <div className="vertical-projects-title">P R O J E C T S</div>
+         <div className="vertical-projects-title vert">P R O J E C T S</div>
 
             <div className="content-border">
 
@@ -113,7 +128,7 @@ const Projects = () => {
                               {activeCard.title}
                            </div>
 
-                           <div className="expandedCard-blurb">
+                           <div className="expandedCard-blurb text">
                               {activeCard.content}
 
                               <br/><br/><br/>

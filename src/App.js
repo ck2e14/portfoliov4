@@ -6,13 +6,14 @@ import About from './Components/About/About'
 import Resume from './Components/Resume/Resume'
 import Projects from './Components/Projects/Projects'
 import Contact from './Components/Contact/Contact'
+import DarkModeToggle from './Components/DarkModeToggle/DarkModeToggle'
 import { BrowserRouter, HashRouter, Route, Switch } from "react-router-dom";
-
 
 function App() {
 
   const [ shader, setShader ] = useState(false)
   const [ paintNavBar, setPaintNavbar ] = useState(false)
+  const [ isDarkMode, setIsDarkMode ] = useState(false)
 
   const handleHoverNavBar = () => {
     setShader(!shader)
@@ -31,30 +32,32 @@ function App() {
 
         <Switch>
 
-          <div className="top-level-container">
+          <div className="top-level-container" id="top-level-container">
 
             { shader && <div className="shader" onMouseOver={handleHoverNavBar}></div>}
 
             { paintNavBar && <Navbar onHover={handleHoverNavBar} /> }
 
+            <DarkModeToggle handleToggle={setIsDarkMode} isCurrentlyDark={isDarkMode} />
+
             <Route exact path='/'>
-              <Landing /> 
+              <Landing isDarkMode={isDarkMode} /> 
             </Route>
 
             <Route path='/about'>
-              <About /> 
+              <About isDarkMode={isDarkMode}/> 
             </Route>
 
             <Route path='/projects'>
-              <Projects /> 
+              <Projects isDarkMode={isDarkMode} /> 
             </Route>
 
             <Route path='/resume'>
-              <Resume /> 
+              <Resume isDarkMode={isDarkMode} /> 
             </Route>
 
             <Route path='/contact'>
-              <Contact /> 
+              <Contact isDarkMode={isDarkMode} /> 
             </Route>
           </div>
 

@@ -1,0 +1,105 @@
+.toggle {
+   position: absolute;
+   top: 50px;
+   right: 50px;
+   background: rgb(197, 197, 197);
+   border: 2px solid rgb(66, 66, 66);
+   width: 45px;
+   height: 20px;
+   cursor: pointer;
+   border-radius: 20px; 
+   transition: 0.1s;
+   font-size: 15px;
+   overflow: visible;
+}
+
+.toggle:before{ 
+   content: "";
+   position: absolute;
+   top: 2px;
+   left: 2px;
+   width: 18px;
+   height: 16px;
+   background: rgb(51, 51, 51);
+   border-radius: 50%;
+   transition: 0.1s;
+}
+
+.toggle.active:before {
+   left: 25px;
+}
+
+.night {
+   background-color: rgb(31, 31, 31);
+   transition: all .25s;
+}
+
+.night-titles {
+   background: rgba(155, 155, 155, 0) !important;
+}
+
+.night-text {
+   color: white;
+}
+
+#toggle-option-text {
+   font-size: 10px;
+   position: fixed;
+   right: 50px;
+   top: 80px;
+   color: black;
+   font-style: bold !important;
+}
+
+/* 
+   ***TO MAKE THIS WORK:***
+   1. WANNA HAVE HIGHEST-LEVEL CONTAINER WITH STATE LOGIC isDarkMode, PASS THIS AND SETTER DOWN
+   TO <DarkModeToggle /> AND HAVE THE onClick HANDLER TOGGLE THE VALUE. 
+
+   2. FIND ALL THE DOM ELEMS WHICH NEED ADJUSTING 
+   (NEED TO ALSO ADD GENERAL classNames TO ALL THOSE DOM ELEMS e.g. 'text', 'title') 
+   AND THEN APPEND NECESSARY NIGHT classNames (e.g. night-text, night-title).
+
+   3. FROM THE HIGHEST LVL CONTAINER, PASS DOWN THE isDarkMode BOOLEAN TO EACH 
+   COMPONENT, AND RUN A useEffect INSIDE EACH (SEE BELOW) TO APPEND DARK THEME CLASSES. 
+   DOING THIS useEffect IN HIGHEST LEVEL RISKS NOT FINDING ANY ELEMS WITH RIGHT classNames 
+   AND CRASHING *AND* ENSURES USER ONLY NEEDS TO HIT THE TOGGLE ONCE, NOT FOR EACH COMPONENT.  
+
+
+   SEE EXAMPLE BELOW:
+   */
+
+
+/* ***DO THIS IN HIGHEST LVL***
+const [ isDarkMode, setIsDarkMode ] = useState(false)  */ 
+
+/* *** DARKMODETOGGLE NEEDS THESE PROPS ***
+<DarkModeToggle handleToggle={setIsDarkMode} isCurrentlyDark={isDarkMode} /> 
+ */
+
+/* *** EXAMPLE OF RENDERING A RANDOM COMPONENT WITH DARK MODE BOOLEAN PROP ***
+            <Route path='/about'>
+               <About isDarkMode={isDarkMode}/> 
+            </Route>
+*/
+
+
+/* 
+***
+   DO THIS IN EACH COMPONENT THAT REQUIRES SOME DARK-THEMING. MAKE SURE THAT FOR EACH useEffect 
+   YOU'RE ONLY INCLUDING querySelectors THAT PERTAIN TO ELEMENTS THAT ACTUALLY EXIST IN EACH RENDER
+***
+   useEffect(() => {
+      const verticalTitles = document.getElementsByClassName('vert')
+      const textToChange = document.getElementsByClassName('text')
+      if(isDarkMode) {
+      verticalTitles[0].classList.add('night-titles')
+      textToChange[0].classList.add('night-text')
+      }
+      if(!isDarkMode) {
+         verticalTitles[0].classList.remove('night-titles')
+         textToChange[0].classList.remove('night-text')
+      }
+   }, [isDarkMode])
+*/
+

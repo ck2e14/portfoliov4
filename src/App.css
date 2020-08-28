@@ -5,6 +5,8 @@
   overflow-x: hidden !important;
   /* font-family: 'Tinos', serif;   */
   font-family: 'Montserrat', sans-serif;
+  transition: all .25s;
+
 }
 
 .content-container {
@@ -13,6 +15,7 @@
   padding-left: 2%;
   z-index: 97;
   /* animation: fade-in 1s; */
+  color: #8A8A8A;
 }
 
 .content-border {
@@ -28,7 +31,6 @@
   border-radius: 10px;
 }
 
-
 .shader {
   position: fixed;
   height: 100vh;
@@ -38,6 +40,7 @@
   z-index: 98;
   animation: fade-in .25s ease-in-out;
 }
+
 
 @-webkit-keyframes text-focus-in {
   0% {
