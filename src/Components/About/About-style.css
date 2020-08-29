@@ -9,10 +9,11 @@
    padding: 3%;
    position: relative;
    top: 50%;
+   left: 1.4%;
    transform: translateY(-50%);
    color: rgb(71, 71, 71);
    font-size: 2vh;
-   width: 45%;
+   width: 48%;
    line-height: 2;
    font-weight: bold;
    animation: fade-in 2s;
