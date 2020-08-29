@@ -11,6 +11,7 @@ import MobilePlaceholder from './Components/MobilePlaceholder/MobilePlaceholder'
 import { isMobile } from "react-device-detect";
 import { HashRouter, Route, Switch } from "react-router-dom";
 // TODO: ADD COMPONENT LIBRARY TO PROJECTS
+// TODO: WRAP PROJECTCARDS IN CSSTRANSITION  
 
 function App() {
 
@@ -26,9 +27,7 @@ function App() {
     }, 4300);
   }, [])
 
-  const handleDarkModeToggle = () => {
-    setIsDarkMode(!isDarkMode)
-  }
+  const handleDarkModeToggle = () => setIsDarkMode(!isDarkMode)
 
   // if(isMobile) return <MobilePlaceholder />
 

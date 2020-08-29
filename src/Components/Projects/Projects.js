@@ -18,7 +18,6 @@ const Projects = props => {
       }
    }, [isDarkMode])
 
-
    const handleCardClick = cardObj => {
       setActiveCard(cardObj)
       document.getElementsByClassName('text')[0].classList.add('night-text') 

@@ -47,7 +47,7 @@ const About = props => {
 
                <SkillCard  
                   title={'Support & Soft Skills'}
-                  listArray={['Git & GitHub versioning', 'Excellent Communicator', 'Teamworker', 'Self-teacher & independent worker', 'FTP Server Management (FileZilla)', '100WPM Typist', 'DJI Mavic Pro Drone Pilot']}
+                  listArray={['Git & GitHub versioning', 'Excellent Communicator', 'Teamworker', 'Self-teacher & independent worker', 'FTP Server Management (FileZilla)', '100WPM Typist', 'Mavic Pro Cinematic Drone Pilot']}
                   />
 
             </div>

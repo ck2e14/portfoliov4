@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { isMobile } from "react-device-detect";
 import './DarkModeToggle-style.css'
 
 const DarkModeToggle = props => {
@@ -19,6 +20,12 @@ const DarkModeToggle = props => {
          setToggle("")
          background.classList.remove('night')
       } 
+   }
+
+   if(isMobile) {
+      return(
+         <div className={'toggle '+ toggle} onClick={toggleMode} ></div>
+      )
    }
 
    return(

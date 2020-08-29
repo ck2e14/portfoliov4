@@ -1,3 +1,8 @@
+* {
+   -webkit-tap-highlight-color: transparent;
+
+}
+
 .toggle {
    position: absolute;
    top: 1vw;
@@ -47,7 +52,9 @@
    color: rgb(167, 167, 167);
 }
 
-.night-text span { color: rgb(255, 255, 255);}
+.night-text span { 
+   color: rgb(255, 255, 255);
+}
 
 .night-text-dulled {
    color: rgb(119, 119, 119);
@@ -80,7 +87,7 @@
    font-style: bold !important;
 }
 
-/* ***TO MAKE THIS WORK:***
+/* ***TO MAKE THIS WORK: ***
    1. WANNA HAVE HIGHEST-LEVEL CONTAINER WITH STATE LOGIC isDarkMode, PASS THIS AND SETTER DOWN
    TO <DarkModeToggle /> AND HAVE THE onClick HANDLER TOGGLE THE VALUE. 
 
@@ -93,28 +100,26 @@
    DOING THIS useEffect IN HIGHEST LEVEL RISKS NOT FINDING ANY ELEMS WITH RIGHT classNames 
    AND CRASHING *AND* ENSURES USER ONLY NEEDS TO HIT THE TOGGLE ONCE, NOT FOR EACH COMPONENT.  
 
-
    SEE EXAMPLE BELOW:
    */
 
-/* ***DO THIS IN HIGHEST LVL***
-const [ isDarkMode, setIsDarkMode ] = useState(false)  */ 
+/* ***DO THIS IN HIGHEST LVL: ***
+   const [ isDarkMode, setIsDarkMode ] = useState(false)  
+*/ 
 
-/* *** DARKMODETOGGLE NEEDS THESE PROPS ***
-<DarkModeToggle handleToggle={setIsDarkMode} isCurrentlyDark={isDarkMode} /> 
+/* *** DARKMODETOGGLE NEEDS THESE PROPS: ***
+   <DarkModeToggle handleToggle={setIsDarkMode} isCurrentlyDark={isDarkMode} /> 
  */
 
-/* *** EXAMPLE OF RENDERING A RANDOM COMPONENT WITH DARK MODE BOOLEAN PROP ***
-            <Route path='/about'>
-               <About isDarkMode={isDarkMode}/> 
-            </Route>
+/* *** EXAMPLE OF RENDERING A RANDOM COMPONENT WITH DARK MODE BOOLEAN PROP: ***
+      <Route path='/about'>
+         <About isDarkMode={isDarkMode}/> 
+      </Route>
 */
 
-/* 
-***
-   DO THIS IN EACH COMPONENT THAT REQUIRES SOME DARK-THEMING. MAKE SURE THAT FOR EACH useEffect 
-   YOU'RE ONLY INCLUDING querySelectors THAT PERTAIN TO ELEMENTS THAT ACTUALLY EXIST IN EACH RENDER
-***
+/* *** DO THIS IN EACH COMPONENT THAT REQUIRES SOME DARK-THEMING. MAKE SURE THAT 
+FOR EACH useEffect YOU'RE ONLY INCLUDING querySelectors THAT PERTAIN TO ELEMENTS 
+THAT ACTUALLY EXIST IN EACH RENDER ***
    useEffect(() => {
       const verticalTitles = document.getElementsByClassName('vert')
       const textToChange = document.getElementsByClassName('text')

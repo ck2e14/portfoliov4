@@ -7,8 +7,6 @@ import { Link } from 'react-router-dom'
 const MobileNavBar = props => {
 
    const [ expandNavBar, setExpandNavBar ] = useState(false)
-   // const [inProp, setInProp] = useState(false);
-
 
    const handleBtnClick = () => setExpandNavBar(!expandNavBar)
 
@@ -16,7 +14,7 @@ const MobileNavBar = props => {
       <>
          <div className="mobile-nav-container">
 
-            { !expandNavBar && <BurgerBtn handleClick={handleBtnClick} paintBtn={'enterMenu'}/> }
+            { !expandNavBar && <BurgerBtn handleClick={handleBtnClick} paintBtn={'enterMenu'} /> }
             {  expandNavBar && <BurgerBtn handleClick={handleBtnClick} paintBtn={'exitMenu'} />}
 
             <CSSTransition

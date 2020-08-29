@@ -44,10 +44,13 @@
 }
 /* END OF UNDERLINE ANIM */
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) 
+and (max-device-width : 480px) {
    .projectcard-container {
-      cursor: pointer;
-      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      font-size: 4.5vw;
+      line-height: 1;
+      width: fit-content;
    }
    .projectcard-container:hover {
       cursor: pointer;
