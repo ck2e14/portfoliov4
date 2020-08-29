@@ -50,9 +50,10 @@
    height: 40px;
    margin: 40px;
    transition: all .25s;
+   filter: invert(.6)
 }
 
 .icon:hover {
-   filter: invert(.75)
+   filter: invert(.34)
 }
 
