@@ -46,13 +46,12 @@
    width: 80%;
    border-bottom: 2px solid rgb(59, 59, 59);
    font-size: 9vw;
-   /* background: linear-gradient(90deg, 
-      rgba(248,255,255,1) 0%, 
-      rgb(183, 255, 255) 16%,   
-      rgb(255, 199, 114) 53%, 
-      rgba(255,255,255,1) 93%); */
-      background: linear-gradient(141deg, rgba(255,255,255,1) 7%, rgba(175,255,251,1) 21%, rgba(255,173,143,1) 51%, rgba(255,255,255,1) 88%);
-   color: rgb(80, 80, 80);  ;
+      background: linear-gradient(141deg, 
+         rgba(255,255,255,1) 7%, 
+         rgba(175,255,251,1) 21%, 
+         rgba(255,173,143,1) 51%, 
+         rgba(255,255,255,1) 88%);
+   color: rgb(80, 80, 80);
    transition: all .25s;;
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -128,4 +127,18 @@
    0%{background-position:0% 91%}
    50%{background-position:100% 10%}
    100%{background-position:0% 91%}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 850px) {
+   .tagline {
+      width: 70%;
+      top: 50%;
+      font-size: 14px;
+   }
+   .my-name {
+      font-size: 55px;
+   }
+   .my-name span {
+      font-size: 40px;
+   }
 }

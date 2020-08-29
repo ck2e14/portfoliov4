@@ -33,7 +33,8 @@
    width: 100%;
    height: 30%;
    line-height: .9;
-   align-items: flex-end;
+      user-select: none;
+      align-items: flex-end;
    justify-content: space-evenly;
    flex:1;
    z-index: 10;
@@ -117,3 +118,4 @@
    color: rgb(255, 255, 255);
    background-color: rgb(236, 122, 122);
 }
+

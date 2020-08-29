@@ -42,7 +42,7 @@ const About = props => {
 
                <SkillCard 
                   title={'Development Skills & Tools'} 
-                  listArray={['JavaScript (ES6, Async & Promises, OOP)', 'React.js (Hooks, Router, Redux)', 'Ruby on Rails (REST API, JWT auth, OOP)', 'SQL (PostgreSQL, SQLite)', 'HTML', 'CSS']}
+                  listArray={['JavaScript (ES6, Async & Promises, OOP)', 'React.js (Hooks, Router, Redux)', 'HTML', 'CSS', 'Ruby on Rails (REST API, JWT auth, OOP)', 'SQL', 'PostgreSQL & SQLite']}
                   />
 
                <SkillCard  
@@ -57,7 +57,6 @@ const About = props => {
       </div>
 
       <div className="vertical-title vert">A B O U T</div>
-
       </>
    )
 }

@@ -7,6 +7,7 @@ import Resume from './Components/Resume/Resume'
 import Projects from './Components/Projects/Projects'
 import Contact from './Components/Contact/Contact'
 import DarkModeToggle from './Components/DarkModeToggle/DarkModeToggle'
+import MobilePlaceholder from './Components/MobilePlaceholder/MobilePlaceholder'
 import { isMobile } from "react-device-detect";
 import { HashRouter, Route, Switch } from "react-router-dom";
 // TODO: ADD COMPONENT LIBRARY TO PROJECTS
@@ -17,27 +18,19 @@ function App() {
   const [ paintNavBar, setPaintNavbar ] = useState(false)
   const [ isDarkMode, setIsDarkMode ] = useState(false)
 
-  const handleHoverNavBar = () => {
-    setShader(!shader)
-  }
+  const handleHoverNavBar = () => setShader(!shader)
 
   useEffect(() => {
     setTimeout(() => {
       setPaintNavbar(true)
-    }, 5300);
+    }, 300);
   }, [])
-
-  if(isMobile) {
-    return(
-      <div className="is-mobile">
-        I am working to bring a mobile version of this website in the very near future - check back soon! 
-      </div>
-    )
-  }
 
   const handleDarkModeToggle = () => {
     setIsDarkMode(!isDarkMode)
   }
+
+  // if(isMobile) return <MobilePlaceholder />
 
   return (
     <>

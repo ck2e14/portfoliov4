@@ -12,14 +12,11 @@ const ProjectCard = props => {
       if(!isDarkMode) {
          document.getElementById(`${project.title}`).classList.remove('night-text-dulled') 
       }
-   }, [isDarkMode])
-
+   }, [isDarkMode, project.title])
 
    const cardClick = () => {
       handleClick(project)
    }
-
-
 
    const manageHoverTitle = inOrOut => {
       if(inOrOut === 'in'){

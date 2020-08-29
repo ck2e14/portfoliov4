@@ -3,27 +3,21 @@
    padding: 1%;
    position: relative;
    font-size: 2vw;
+   user-select: none;
    cursor: pointer;
    border-radius: 0px;
    text-align: right;
    transition: all .5s;
    left: 0;
-   /* border-right: 24px solid rgba(199, 54, 54, 0); */
    color: rgb(49, 49, 49);
    font-weight: bold;
 }
 
 .projectcard-container:hover {
    color: rgb(133, 187, 184);
+   user-select: none;
    color: #0091cf;
-   /* border-right: 2px solid rgba(51, 51, 51, 0);; */
-   left: 4%;
-   /* background: linear-gradient(90deg, 
-      rgba(248,255,255,1) 0%, 
-      rgb(254, 255, 202) 16%,   
-      rgb(158, 255, 171) 73%, 
-      rgba(255,255,255,1) 93%); */
-      
+   left: 4%;      
 }
 
 /*  UNDERLINE ANIM BELOW */   
@@ -37,6 +31,7 @@
    left: 0;
    background-color: #f88379;
    transform-origin: bottom left;
+   user-select: none;
    transition: transform 1s;
 }
 
@@ -44,7 +39,17 @@
    transform: scaleX(.6);
    transform-origin: bottom right;
    transition: transform .3s;
+   user-select: none;
    background-color: #f88379
 }
 /* END OF UNDERLINE ANIM */
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   .projectcard-container {
+      cursor: pointer;
+      user-select: none;
+   }
+   .projectcard-container:hover {
+      cursor: pointer;
+   }
+}
