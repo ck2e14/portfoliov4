@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import './MobileNavBar-style.css'
 import BurgerBtn from './MobileBurgerBtn/MobileBurgerBtn'
+import {CSSTransition} from 'react-transition-group'
 import { Link } from 'react-router-dom'
-
 
 const MobileNavBar = props => {
 
    const [ expandNavBar, setExpandNavBar ] = useState(false)
+   // const [inProp, setInProp] = useState(false);
+
 
    const handleBtnClick = () => setExpandNavBar(!expandNavBar)
 
@@ -14,11 +16,15 @@ const MobileNavBar = props => {
       <>
          <div className="mobile-nav-container">
 
-            <BurgerBtn handleClick={handleBtnClick} />
+            { !expandNavBar && <BurgerBtn handleClick={handleBtnClick} paintBtn={'enterMenu'}/> }
+            {  expandNavBar && <BurgerBtn handleClick={handleBtnClick} paintBtn={'exitMenu'} />}
 
-            {/* { expandNavBar && <div className="mobile-shader-layer" onClick={handleBtnClick}></div> } */}
-
-            { expandNavBar && 
+            <CSSTransition
+               in={expandNavBar}
+               timeout={300}
+               classNames={'my-node'}
+               unmountOnExit
+               >
                <div className="mobile-nav-expanded">
 
                   <div className="mobile-nav-expanded-flex-container">
@@ -30,7 +36,7 @@ const MobileNavBar = props => {
                      </Link>
 
                      <Link to="/portfolio" className="mobile-nav-expanded-flex-item" onClick={handleBtnClick}>
-                        <div className="mobile-nav-expanded-flex-item">
+                        <div className="mobile-nav-expanded-flex-text">
                            P O R T F O L I O
                         </div>
                      </Link>
@@ -50,7 +56,7 @@ const MobileNavBar = props => {
                   </div>
 
                </div>
-            }
+               </CSSTransition>
 
          </div>
       </>

@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setPaintNavbar(true)
-    }, 300);
+    }, 4300);
   }, [])
 
   const handleDarkModeToggle = () => {

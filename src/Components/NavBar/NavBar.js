@@ -8,12 +8,11 @@ const NavBar = props => {
 
    const { onHover } = props
 
-
    if(isMobile){
       return(
          <MobileNavBar />
       )
-      } else {
+      } else { 
       return(
          <div className="navbar-container" 
             onMouseEnter={() => onHover()} 

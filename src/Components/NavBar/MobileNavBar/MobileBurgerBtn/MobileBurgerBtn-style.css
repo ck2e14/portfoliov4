@@ -1,20 +1,38 @@
 .btn-container{
    position: absolute;
-   left: 15%;
-   top: 1%;
-   height: 4%;
-   width: 40%;
+   left: 20%;
+   top: 2%;
+   height: 3%;
+   width: 30%;
    /* background: rgb(136, 136, 136); */
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: space-between;
    z-index: 199;
+   animation: fade-in 1s;
 }
 
 .btn-line {
    height: 20%;
-   border-radius: 10%;
+   border-radius: 10px;
    width: 100%;
-   background: rgb(66, 66, 66)
+   background: rgb(75, 75, 75)
+}
+
+.exit-btn-container {
+   position: absolute;
+   left: 15%;
+   top: 1%;
+   height: 4%;
+   font-size: 90px;
+   color: rgb(255, 255, 255);
+   text-shadow: 1px 1px 15px rgb(255, 255, 255);
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 199;
+   animation: fade-in 1s;
 }
