@@ -47,7 +47,7 @@
    top: 50%;
    transform: translateY(-50%);
    color: rgb(119, 119, 119);
-   animation: fade-in 2s;
+   animation: fade-in 1s;
    /* transition: all .25s; */
 }
 

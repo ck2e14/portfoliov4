@@ -37,7 +37,7 @@
    left: 0;
    background-color: #f88379;
    transform-origin: bottom left;
-   transition: transform .7s;
+   transition: transform 1s;
 }
 
 .projectcard-container:hover::before {

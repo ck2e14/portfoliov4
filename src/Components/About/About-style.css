@@ -15,8 +15,7 @@
    width: 45%;
    line-height: 2;
    font-weight: bold;
-   animation: fade-in 1s;
-
+   animation: fade-in 2s;
 }
 
 .about-blurb span {  
