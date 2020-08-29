@@ -46,11 +46,12 @@
    width: 80%;
    border-bottom: 2px solid rgb(59, 59, 59);
    font-size: 9vw;
-   background: linear-gradient(90deg, 
+   /* background: linear-gradient(90deg, 
       rgba(248,255,255,1) 0%, 
       rgb(183, 255, 255) 16%,   
       rgb(255, 199, 114) 53%, 
-      rgba(255,255,255,1) 93%);
+      rgba(255,255,255,1) 93%); */
+      background: linear-gradient(141deg, rgba(255,255,255,1) 7%, rgba(175,255,251,1) 21%, rgba(255,173,143,1) 51%, rgba(255,255,255,1) 88%);
    color: rgb(80, 80, 80);  ;
    transition: all .25s;;
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;

@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setPaintNavbar(true)
-    }, 5700);
+    }, 700);
   }, [])
 
   if(isMobile) {
@@ -50,16 +50,12 @@ function App() {
 
             { shader && <div className="shader" onMouseOver={handleHoverNavBar}></div>}
 
-            { paintNavBar && <Navbar onHover={handleHoverNavBar} /> }
+            { paintNavBar && <Navbar onHover={handleHoverNavBar} isDarkMode={isDarkMode} /> }
 
             { paintNavBar && <DarkModeToggle handleToggle={handleDarkModeToggle} isCurrentlyDark={isDarkMode} /> }
 
             <Route exact path='/'>
               <Landing isDarkMode={isDarkMode} /> 
-            </Route>
-
-            <Route path='/'>
-              <div>ERROR 404</div>
             </Route>
 
             <Route path='/about'>

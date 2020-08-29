@@ -36,14 +36,32 @@
 
 .night-titles {
    background: rgba(155, 155, 155, 0) !important;
+   color: rgb(255, 142, 101);
 }
 
 .night-text {
    color: rgb(167, 167, 167);
 }
 
+.night-text span { color: rgb(255, 255, 255);}
+
+.night-text-dulled {
+   color: rgb(119, 119, 119);
+}
+
 .night-hover:hover {
-   color: #85ac67;
+   color: #00eeff;
+   border-radius: 5px;;
+   /* border: 2px solid white; */
+}
+
+.night-text-nav {
+   color: rgb(102, 102, 102);
+   transition: all .5s;
+}
+
+.night-text-nav:hover {
+   color: rgb(255, 187, 0);
 }
 
 .hide-watercolor-bg {
