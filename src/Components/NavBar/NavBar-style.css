@@ -55,6 +55,7 @@
    transition: padding .4s, color .25s;
    left: 0;
    top:0;
+   text-transform: uppercase;
 }
 
 .nav-item::before {

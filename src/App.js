@@ -7,8 +7,10 @@ import Resume from './Components/Resume/Resume'
 import Projects from './Components/Projects/Projects'
 import Contact from './Components/Contact/Contact'
 import DarkModeToggle from './Components/DarkModeToggle/DarkModeToggle'
-import MobilePlaceholder from './Components/MobilePlaceholder/MobilePlaceholder'
-import { isMobile } from "react-device-detect";
+// import MobilePlaceholder from './Components/MobilePlaceholder/MobilePlaceholder'
+// import { isMobile } from "react-device-detect";
+import ScreenOrientationReact from 'screen-orientation-react'
+
 import { HashRouter, Route, Switch } from "react-router-dom";
 // TODO: ADD COMPONENT LIBRARY TO PROJECTS
 // TODO: WRAP PROJECTCARDS IN CSSTRANSITION  
@@ -24,12 +26,19 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setPaintNavbar(true)
-    }, 4300);
+    }, 5300);
   }, [])
 
   const handleDarkModeToggle = () => setIsDarkMode(!isDarkMode)
 
-  // if(isMobile) return <MobilePlaceholder />
+  const landscapeOptions = { 
+    color:  "#fff",
+    bgColor: "#8bdac6",
+    animation: true,
+    fontSize: 3,
+    iconColor: '#464646',
+    message: '[ Landscape is not currently supported - please rotate to portrait ]'
+  }
 
   return (
     <>
@@ -70,6 +79,10 @@ function App() {
         </Switch>
 
       </HashRouter>
+
+      <div>
+        <ScreenOrientationReact options={landscapeOptions}/>
+      </div>
 
       <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"/>

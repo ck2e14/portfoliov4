@@ -43,7 +43,7 @@
    background: linear-gradient(72deg, 
       rgba(248,255,255,1) 0%, 
       rgba(247,197,255,1) 32%, 
-      rgba(255,148,253,1) 69%, 
+      rgb(255, 180, 254) 69%, 
       rgba(255,255,255,1) 93%);
 }
 
@@ -57,15 +57,39 @@
    width: 45%;
    right: 3%;
    top: 5%;
-   /* border: 2px solid green; */
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
    .vertical-title {
-      transform: rotate(0deg);
-      top: 3%;
-      left: 20%;
-      font-size: 4vh;
+      left: -4%;
+      top: 27%;
+      font-size: 5vw;
+   }
+   .blurb-contents-mobile {
+      position: relative;
+      border-top: 2px solid grey;
+      padding-top: 6%;
+   }
+   .about-blurb {
+      font-size: 3vw;
+      line-height: 1.35;
+      width: 88%;
+      /* height: 100%; */
+      text-align: center;
+      left: 50%;
+      /* border: 2px solid red; */
+      /* padding-top: 15%; */
+      top: 60%;
+      transform: translate(-50%);
+   }
+   .about-blurb span {
+      font-size: 3vw;
+      color: #464646;
+   }
+   .about-skillcards {
+      width: 95%;
+      height: 55%;
+      top: 0%;
    }
    
-}
+}  

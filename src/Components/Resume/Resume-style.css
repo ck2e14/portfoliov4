@@ -4,6 +4,7 @@
    width: fit-content;
    transform: rotate(270deg);
    font-family: 'Tinos', serif;  
+   text-transform: uppercase;
    top: 28%;
    left: 2.3%;
    color: grey;

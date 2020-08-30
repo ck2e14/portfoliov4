@@ -155,7 +155,8 @@ and (max-device-width : 480px) {
       width: 95%;
       color: grey;
       text-align: center;
-   }.vertical-projects-title {
+   }
+   .vertical-projects-title {
       font-size: 5vw;
       left: -12%;
    }

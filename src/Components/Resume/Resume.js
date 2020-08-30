@@ -32,7 +32,7 @@ const Resume = props => {
 
          </div>
 
-         <div className="vertical-resume-title vert">R E S U M E</div>
+         <div className="vertical-resume-title vert">r é s u m é</div>
 
       </>
    )

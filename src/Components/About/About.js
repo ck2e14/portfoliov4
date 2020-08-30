@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import './About-style.css'
 import SkillCard from '../SkillCard/SkillCard'
+import { isMobile } from 'react-device-detect'
 
 const About = props => {
 
@@ -26,12 +27,25 @@ const About = props => {
 
          <div className="content-border">
 
-            <div className="about-blurb text">
+            {isMobile && 
+               <div className="about-blurb text">
+                  <div className="blurb-contents-mobile">
+                     I am a junior <span> full-stack web developer.</span> I love to dream-up and develop <span>performant,</span> <span>powerful</span> & <span>attractive user experiences</span>, particularly in React.js, supported by Rails backends.<br/><br/>
+
+                     I am quietly <span>confident,</span> naturally <span>curious,</span> and <span>always learning</span> new skills and new technologies.
+                  </div>
+               </div>
+            }
+
+            {!isMobile && 
+               <div className="about-blurb text">
                   I am a junior <span> full-stack web developer.</span> I love to dream-up and develop <span>performant,</span> <span>powerful</span> & <span>attractive user experiences</span>, particularly in React.js, supported by Rails backends.<br/><br/>
                   
                   Since graduating from FlatIron's immersive software engineering course in January, I've <span>levelled-up</span> my full-stack and UX skillset through personal & commercial projects, online tutorials, forum chats and algorithm challenge websites like <a href="http://edabit.com" target="_blank" rel="noopener noreferrer" className="link">edabit.com.</a> <br/><br/>
                   I am quietly <span>confident,</span> naturally <span>curious,</span> and <span>always learning</span> new skills and new technologies.
-            </div>
+               </div>
+            }
+
 
             <div className="about-skillcards">
 

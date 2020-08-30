@@ -34,7 +34,7 @@ const NavBar = props => {
                </Link>
 
                <Link to='/resume' className="nav-item">
-                  <div>RESUME</div>
+                  <div>r é s u m é</div>
                </Link>
                
                <Link to='/contact' className="nav-item">

@@ -7,11 +7,6 @@
    box-shadow: inset 0;
 }
 
-/* .skillcard-container:hover {
-   box-shadow: inset 6px 6px 10px 0px rgba(99, 99, 99, 0.2),
-   inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
-} */
-
 .skillcard-front {
    height: 100%;
    display: flex;
@@ -58,4 +53,13 @@ li {
    cursor: default;
    font-size: 1.25vw;
    color: rgb(92, 92, 92);
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   li {
+      font-size: 3vw;
+   }
+   .skillcard-front p {
+      font-size: 3vw
+   }
 }

@@ -1,8 +1,9 @@
-.btn-container{
+.btn-container {
    position: absolute;
-   left: 20%;
-   top: 2%;
+   left: 10%;
+   top: 0%;
    height: 3%;
+   padding: 14%;
    width: 30%;
    /* background: rgb(136, 136, 136); */
    display: flex;
@@ -22,17 +23,14 @@
 
 .exit-btn-container {
    position: absolute;
-   left: 15%;
-   top: 1%;
-   height: 4%;
+   left: 20%;
+   top: -1%;
+   height: fit-content;
+   /* background: rgb(136, 136, 136); */
    font-size: 90px;
    color: rgb(255, 255, 255);
    text-shadow: 1px 1px 15px rgb(255, 255, 255);
-   width: 40%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: space-between;
+   width: 15vw;
    z-index: 199;
    animation: fade-in 1s;
 }

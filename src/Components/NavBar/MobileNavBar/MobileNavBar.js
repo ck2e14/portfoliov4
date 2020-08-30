@@ -41,7 +41,7 @@ const MobileNavBar = props => {
 
                      <Link to="/resume" className="mobile-nav-expanded-flex-item" onClick={handleBtnClick}>
                         <div className="mobile-nav-expanded-flex-item">
-                           R E S U M E
+                        r é s u m é
                         </div>
                      </Link>
 

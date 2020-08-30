@@ -54,5 +54,6 @@ and (max-device-width : 480px) {
    }
    .projectcard-container:hover {
       cursor: pointer;
+      left: -4%;
    }
 }
