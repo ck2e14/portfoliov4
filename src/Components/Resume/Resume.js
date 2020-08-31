@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import './Resume-style.css'
+import { Document } from 'react-pdf'
 import resumeFile from '../../Assets/Documents/Chris Kennedy CV July 2020.pdf'
+import { isMobile } from 'react-device-detect'
 
 const Resume = props => {
 
@@ -15,6 +17,34 @@ const Resume = props => {
          verticalTitles[0].classList.remove('night-titles')
       }
    }, [isDarkMode])
+
+   // if(isMobile) {
+   //    return(
+   //       <Document file={resumeFile} />
+   //    )
+   // }
+   if(isMobile) {
+      return(
+         <>
+            <div className="content-container">
+
+               <div className="content-border">
+
+                  <div className="resume-container text">
+
+                     <a href="https://drive.google.com/file/d/1qcO1gjAVS813sJUr2MFIIhraHeCdem66/view?usp=sharing" className="direct-download-resume-link">View or Download Résumé</a>
+
+                  </div>
+
+               </div>
+
+            </div>
+
+            <div className="vertical-resume-title vert">r é s u m é</div>
+
+         </>
+      )
+   }
 
    return(
       <>

@@ -45,6 +45,8 @@
    left: 50%;
    transform: translateX(-50%);
    font-size: 1vw;
+   display: flex;
+   justify-content: center;
 }
 
 .icon {
@@ -58,3 +60,28 @@
    filter: invert(.34)
 }
 
+@media only screen and (min-device-width : 120px) 
+and (max-device-width : 480px) {
+   .vertical-contact-title {
+      font-size: 6vw;
+      left: -12%;
+   }
+   .contact-contents {
+      font-size: 3vw;
+      line-height: 1.5;
+      width: 95%;;
+   }
+   .contact-contents span {
+      font-size: 3.5vw;
+   }
+   .contact-links {
+      width: 90%;;
+      top: 75%;
+      display: flex;;
+      justify-content: center;
+
+   }
+   .icon {
+      margin: 3%;
+   }
+}

@@ -1,5 +1,5 @@
 .projectcard-container {
-   /* width: 75%; */
+   width: fit-content;
    padding: 1%;
    position: relative;
    font-size: 2vw;
@@ -50,7 +50,6 @@ and (max-device-width : 480px) {
       -webkit-tap-highlight-color: transparent;
       font-size: 4.5vw;
       line-height: 1;
-      width: fit-content;
    }
    .projectcard-container:hover {
       cursor: pointer;

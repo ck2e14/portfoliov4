@@ -10,7 +10,8 @@
    position: absolute;
    width: fit-content;
    transform: rotate(270deg);
-   font-family: 'Tinos', serif;  
+   text-size-adjust: 100%;
+   font-family: 'Tinos', serif; 
    top: 28%;
    left: -.8%;
    color: grey;
@@ -103,7 +104,7 @@
    text-transform: uppercase;
    font-size: 1vw;
    position: absolute;
-   margin-top: -5%;
+   margin-top: -1%;
 }
 
 .expandedCard-links a {
@@ -117,6 +118,14 @@
 .expandedCard-links a:hover {
    color: rgb(255, 255, 255);
    background-color: rgb(236, 122, 122);
+}
+
+_::-webkit-full-page-media, _:future, :root .vertical-projects-title {
+   left: -1%;
+   transform: none;
+   top: 10%;
+   left: 15%;  
+   font-size: clamp(3rem, 3vw, 3rem)
 }
 
 @media only screen and (min-device-width : 320px) 

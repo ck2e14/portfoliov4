@@ -7,13 +7,14 @@ import Resume from './Components/Resume/Resume'
 import Projects from './Components/Projects/Projects'
 import Contact from './Components/Contact/Contact'
 import DarkModeToggle from './Components/DarkModeToggle/DarkModeToggle'
-// import MobilePlaceholder from './Components/MobilePlaceholder/MobilePlaceholder'
-// import { isMobile } from "react-device-detect";
+import MobilePlaceholder from './Components/MobilePlaceholder/MobilePlaceholder'
+import NotFound from './Components/404/404'
 import ScreenOrientationReact from 'screen-orientation-react'
-
+import { isMobile } from "react-device-detect";
 import { HashRouter, Route, Switch } from "react-router-dom";
 // TODO: ADD COMPONENT LIBRARY TO PROJECTS
 // TODO: WRAP PROJECTCARDS IN CSSTRANSITION  
+// TODO: WRAP NAVBAR SHADER IN CSSTRANSITION, REMOVE CUSTOM TRANSITION
 
 function App() {
 
@@ -74,6 +75,8 @@ function App() {
             <Route path='/contact'>
               <Contact isDarkMode={isDarkMode} /> 
             </Route>
+
+            {/* <Route component={NotFound} /> */}
           </div>
 
         </Switch>

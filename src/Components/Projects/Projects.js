@@ -80,7 +80,7 @@ const Projects = props => {
    const portfolio = {
       title: 'Portfolio Website',
       content: 'This site is built in JavaScript React, HTML and CSS to showcase my interests, projects and motivations and is itself intended to demonstrate them. If you would like a bespoke site like this one or totally different, please get in touch!',
-      codeLink: 'https://github.com/ck2e14/portfoliov4'
+      codeLink: 'https://github.com/ck2e14/portfoliov4/tree/master/src/Components'
    }
 
    return(
