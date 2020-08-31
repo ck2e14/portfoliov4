@@ -36,6 +36,14 @@
    font-weight: bold;
 }
 
+_::-webkit-full-page-media, _:future, :root .vertical-resume-title {
+   transform: none;
+   top: 9.5%;
+   z-index: 199;
+   left: 15%;  
+   font-size: clamp(1rem, 3vw, 3rem)
+}
+
 @media only screen and (min-device-width : 320px) 
 and (max-device-width : 480px) {
    .vertical-resume-title {

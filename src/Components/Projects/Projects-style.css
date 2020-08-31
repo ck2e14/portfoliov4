@@ -121,11 +121,10 @@
 }
 
 _::-webkit-full-page-media, _:future, :root .vertical-projects-title {
-   left: -1%;
    transform: none;
    top: 10%;
    left: 15%;  
-   font-size: clamp(3rem, 3vw, 3rem)
+   font-size: clamp(1rem, 3vw, 3rem)
 }
 
 @media only screen and (min-device-width : 320px) 

@@ -16,6 +16,13 @@
       rgba(255,255,255,1) 93%);   
 }
 
+_::-webkit-full-page-media, _:future, :root .vertical-contact-title {
+   transform: none;
+   top: 10%;
+   left: 15%;  
+   font-size: clamp(1rem, 3vw, 3rem)
+}
+
 .contact-contents {
    height: fit-content;
    top: 40%;
