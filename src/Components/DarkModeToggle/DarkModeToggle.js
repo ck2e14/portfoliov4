@@ -1,42 +1,44 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
 import { isMobile } from "react-device-detect";
-import './DarkModeToggle-style.css'
+import "./DarkModeToggle-style.css";
 
-const DarkModeToggle = props => {
-
-   const [ toggle, setToggle ] = useState('')
+const DarkModeToggle = (props) => {
+   const [toggle, setToggle] = useState("");
    // eslint-disable-next-line
-   const { handleToggle, isCurrentlyDark } = props
+   const { handleToggle, isCurrentlyDark } = props;
 
    const toggleMode = () => {
-      handleToggle() 
-      const background = document.getElementById('top-level-container')
+      handleToggle();
+      const background = document.getElementById("top-level-container");
       // The rest of the night-mode classList adding is done in individual component's useEffects
-      if(toggle === "") {
-         setToggle('active')
-         background.classList.add('night')
+      if (toggle === "") {
+         setToggle("active");
+         background.classList.add("night");
       }
-      if(toggle === "active"){
-         setToggle("")
-         background.classList.remove('night')
-      } 
+      if (toggle === "active") {
+         setToggle("");
+         background.classList.remove("night");
+      }
+   };
+
+   if (isMobile) {
+      return <div className={"toggle " + toggle} onClick={toggleMode}></div>;
    }
 
-   if(isMobile) {
-      return(
-         <div className={'toggle '+ toggle} onClick={toggleMode} ></div>
-      )
-   }
-
-   return(
+   return (
       <>
-         <div className={'toggle '+ toggle} onClick={toggleMode} ></div>
-         {toggle === 'active' ? 
-            <div id="toggle-option-text" style={{color: 'white'}}>Night Mode</div> 
-         : 
-            <div id="toggle-option-text" style={{color: 'black'}}>Light Mode</div>}
+         <div className={"toggle " + toggle} onClick={toggleMode}></div>
+         {toggle === "active" ? (
+            <div id='toggle-option-text' style={{ color: "white" }}>
+               Night Mode
+            </div>
+         ) : (
+            <div id='toggle-option-text' style={{ color: "black" }}>
+               Light Mode
+            </div>
+         )}
       </>
-   )
-}
+   );
+};
 
-export default DarkModeToggle
+export default DarkModeToggle;

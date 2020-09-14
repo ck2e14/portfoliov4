@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './Resume-style.css'
 import { Document } from 'react-pdf'
-import resumeFile from '../../Assets/Documents/Chris Kennedy CV July 2020.pdf'
+import resumeFile from '../../Assets/Documents/ChrisKennedyAugustResume.pdf'
 import { isMobile } from 'react-device-detect'
 
 const Resume = props => {
@@ -32,7 +32,7 @@ const Resume = props => {
 
                   <div className="resume-container text">
 
-                     <a href="https://drive.google.com/file/d/1qcO1gjAVS813sJUr2MFIIhraHeCdem66/view?usp=sharing" className="direct-download-resume-link">View or Download Résumé</a>
+                     <a href="https://drive.google.com/file/d/1woYe8QHyPm9TmgDGHCVYUGk0YnX4Y6zN/view?usp=sharing" className="direct-download-resume-link">View or Download Résumé</a>
 
                   </div>
 

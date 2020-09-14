@@ -1,97 +1,94 @@
-import React, {useState, useEffect} from 'react';
-import './App.css';
-import Landing from './Components/Landing/Landing'
-import Navbar from './Components/NavBar/NavBar'
-import About from './Components/About/About'
-import Resume from './Components/Resume/Resume'
-import Projects from './Components/Projects/Projects'
-import Contact from './Components/Contact/Contact'
-import DarkModeToggle from './Components/DarkModeToggle/DarkModeToggle'
-import MobilePlaceholder from './Components/MobilePlaceholder/MobilePlaceholder'
-import NotFound from './Components/404/404'
-import ScreenOrientationReact from 'screen-orientation-react'
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import Landing from "./Components/Landing/Landing";
+import Navbar from "./Components/NavBar/NavBar";
+import About from "./Components/About/About";
+import Resume from "./Components/Resume/Resume";
+import Projects from "./Components/Projects/Projects";
+import Contact from "./Components/Contact/Contact";
+import DarkModeToggle from "./Components/DarkModeToggle/DarkModeToggle";
+import MobilePlaceholder from "./Components/MobilePlaceholder/MobilePlaceholder";
+import NotFound from "./Components/404/404";
+import ScreenOrientationReact from "screen-orientation-react";
 import { isMobile } from "react-device-detect";
 import { HashRouter, Route, Switch } from "react-router-dom";
 // TODO: ADD COMPONENT LIBRARY TO PROJECTS
-// TODO: WRAP PROJECTCARDS IN CSSTRANSITION  
+// TODO: WRAP PROJECTCARDS IN CSSTRANSITION
 // TODO: WRAP NAVBAR SHADER IN CSSTRANSITION, REMOVE CUSTOM TRANSITION
 
 function App() {
+   const [shader, setShader] = useState(false);
+   const [paintNavBar, setPaintNavbar] = useState(false);
+   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  const [ shader, setShader ] = useState(false)
-  const [ paintNavBar, setPaintNavbar ] = useState(false)
-  const [ isDarkMode, setIsDarkMode ] = useState(false)
+   const handleHoverNavBar = () => setShader(!shader);
 
-  const handleHoverNavBar = () => setShader(!shader)
+   useEffect(() => {
+      setTimeout(() => {
+         setPaintNavbar(true);
+      }, 5300);
+   }, []);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setPaintNavbar(true)
-    }, 5300);
-  }, [])
+   const handleDarkModeToggle = () => setIsDarkMode(!isDarkMode);
 
-  const handleDarkModeToggle = () => setIsDarkMode(!isDarkMode)
+   const landscapeOptions = {
+      color: "#fff",
+      bgColor: "#8bdac6",
+      animation: true,
+      fontSize: 3,
+      iconColor: "#464646",
+      message: "[ Landscape is not currently supported - please rotate to portrait ]",
+   };
 
-  const landscapeOptions = { 
-    color:  "#fff",
-    bgColor: "#8bdac6",
-    animation: true,
-    fontSize: 3,
-    iconColor: '#464646',
-    message: '[ Landscape is not currently supported - please rotate to portrait ]'
-  }
+   return (
+      <>
+         <HashRouter>
+            <Switch>
+               <div className='top-level-container' id='top-level-container'>
+                  {shader && <div className='shader' onMouseOver={handleHoverNavBar}></div>}
 
-  return (
-    <>
+                  {paintNavBar && <Navbar onHover={handleHoverNavBar} isDarkMode={isDarkMode} />}
 
-      <HashRouter>
+                  {paintNavBar && (
+                     <DarkModeToggle handleToggle={handleDarkModeToggle} isCurrentlyDark={isDarkMode} />
+                  )}
 
-        <Switch>
+                  <Route exact path='/'>
+                     <Landing isDarkMode={isDarkMode} />
+                  </Route>
 
-          <div className="top-level-container" id="top-level-container">
+                  <Route path='/about'>
+                     <About isDarkMode={isDarkMode} />
+                  </Route>
 
-            { shader && <div className="shader" onMouseOver={handleHoverNavBar}></div>}
+                  <Route path='/portfolio'>
+                     <Projects isDarkMode={isDarkMode} />
+                  </Route>
 
-            { paintNavBar && <Navbar onHover={handleHoverNavBar} isDarkMode={isDarkMode} /> }
+                  <Route path='/resume'>
+                     <Resume isDarkMode={isDarkMode} />
+                  </Route>
 
-            { paintNavBar && <DarkModeToggle handleToggle={handleDarkModeToggle} isCurrentlyDark={isDarkMode} /> }
+                  <Route path='/contact'>
+                     <Contact isDarkMode={isDarkMode} />
+                  </Route>
 
-            <Route exact path='/'>
-              <Landing isDarkMode={isDarkMode} /> 
-            </Route>
+                  {/* <Route component={NotFound} /> */}
+               </div>
+            </Switch>
+         </HashRouter>
 
-            <Route path='/about'>
-              <About isDarkMode={isDarkMode}/> 
-            </Route>
+         <div>
+            <ScreenOrientationReact options={landscapeOptions} />
+         </div>
 
-            <Route path='/portfolio'>
-              <Projects isDarkMode={isDarkMode} /> 
-            </Route>
-
-            <Route path='/resume'>
-              <Resume isDarkMode={isDarkMode} /> 
-            </Route>
-
-            <Route path='/contact'>
-              <Contact isDarkMode={isDarkMode} /> 
-            </Route>
-
-            {/* <Route component={NotFound} /> */}
-          </div>
-
-        </Switch>
-
-      </HashRouter>
-
-      <div>
-        <ScreenOrientationReact options={landscapeOptions}/>
-      </div>
-
-      <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet"/>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"/>
-
-    </>
-  );
+         <link href='https://fonts.googleapis.com/css2?family=Tinos&display=swap' rel='stylesheet' />
+         <link
+            href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'
+            rel='stylesheet'
+         />
+      </>
+   );
 }
 
 export default App;
