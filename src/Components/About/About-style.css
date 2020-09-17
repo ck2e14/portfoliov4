@@ -37,14 +37,14 @@
    font-family: 'Tinos', serif;  
    top: 23%;
    left: 3.7%;
-   color: grey;
+   color: rgb(99, 205, 209);
    animation: fade-in 1s;
    cursor: default;
-   background: linear-gradient(72deg, 
+   /* background: linear-gradient(72deg, 
       rgba(248,255,255,1) 0%, 
       rgba(247,197,255,1) 32%, 
       rgb(255, 180, 254) 69%, 
-      rgba(255,255,255,1) 93%);
+      rgba(255,255,255,1) 93%); */
 }
 
 _::-webkit-full-page-media, _:future, :root .vertical-title {

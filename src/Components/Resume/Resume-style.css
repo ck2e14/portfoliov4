@@ -7,14 +7,14 @@
    text-transform: uppercase;
    top: 28%;
    left: 2.3%;
-   color: grey;
+   color: rgb(99, 205, 209);
    animation: fade-in 1s;
    cursor: default;
-   background: linear-gradient(72deg, 
+   /* background: linear-gradient(72deg, 
       rgba(255,255,255,1) 4%, 
       rgb(156, 255, 149) 54%, 
       rgba(183,255,178,1) 75%, 
-      rgba(255,255,255,1) 93%);
+      rgba(255,255,255,1) 93%); */
 }
 
 .resume-container {

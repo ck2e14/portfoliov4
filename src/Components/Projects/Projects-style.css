@@ -14,15 +14,15 @@
    font-family: 'Tinos', serif; 
    top: 28%;
    left: -.8%;
-   color: grey;
+   color: rgb(99, 205, 209);
    animation: fade-in 1s;
    cursor: default;
-   background: linear-gradient(90deg, 
+   /* background: linear-gradient(90deg, 
       rgba(248,255,255,1) 0%, 
       rgb(172, 255, 255) 16%, 
       rgba(153,251,251,1) 61%, 
       rgba(208,252,252,1) 83%, 
-      rgba(255,255,255,1) 93%);
+      rgba(255,255,255,1) 93%); */
 }
 
 .projectCards-container-flex {

@@ -9,7 +9,6 @@ const About = props => {
    useEffect(() => {
       const verticalTitles = document.getElementsByClassName("vert");
       const textToChange = document.getElementsByClassName("text");
-      console.log(textToChange);
       if (isDarkMode) {
          verticalTitles[0].classList.add("night-titles");
          textToChange[0].classList.add("night-text");
