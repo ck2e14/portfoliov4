@@ -11,8 +11,8 @@
    cursor: default;
    background: linear-gradient(72deg, 
       rgba(255,255,255,1) 4%, 
-      rgb(255, 233, 133) 54%, 
-      rgb(255, 237, 156) 75%, 
+      rgb(255, 179, 179) 54%, 
+      rgb(255, 196, 196) 75%, 
       rgba(255,255,255,1) 93%);   
 }
 
@@ -57,7 +57,7 @@ _::-webkit-full-page-media, _:future, :root .vertical-contact-title {
 }
 
 .icon {
-   height: 40px;
+   height: 4vw;
    margin: 40px;
    transition: all .25s;
    filter: invert(.6)

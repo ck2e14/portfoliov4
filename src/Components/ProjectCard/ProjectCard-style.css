@@ -14,9 +14,8 @@
 }
 
 .projectcard-container:hover {
-   color: rgb(133, 187, 184);
    user-select: none;
-   color: #0091cf;
+   color:  rgb(42, 161, 151);
    left: 4%;      
 }
 

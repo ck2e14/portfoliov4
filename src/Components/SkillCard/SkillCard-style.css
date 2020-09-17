@@ -22,11 +22,8 @@
 
 .skillcard-front p {
    font-size: 3vh;
-   /* font-weight: bold; */
    font-family: 'Tinos', serif;  
    cursor: pointer;   
-   /* background: linear-gradient(72deg, rgba(248,255,255,1) 0%, rgb(255, 255, 255) 16%, rgb(153, 251, 210) 45%, rgba(209,252,208,1) 72%, rgba(255,255,255,1) 93%); */
-   /* background: linear-gradient(72deg, rgba(248,255,255,1) 0%, rgba(153,251,242,1) 32%, rgba(153,224,255,1) 69%, rgba(255,255,255,1) 93%); */
    background-color: rgb(58, 58, 58);
    border-radius: 5px;
    padding: 5%;
@@ -52,7 +49,7 @@
 li {
    cursor: default;
    font-size: 1.25vw;
-   color: rgb(92, 92, 92);
+   color: rgb(117, 117, 117);
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {

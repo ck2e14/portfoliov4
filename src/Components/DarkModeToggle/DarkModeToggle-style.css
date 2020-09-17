@@ -41,11 +41,12 @@
 
 .night-titles {
    background: rgba(155, 155, 155, 0) !important;
-   color: rgb(255, 142, 101);
+   color: rgb(109, 224, 199);
 }
 
 .night-text {
    color: rgb(167, 167, 167);
+
 }
 
 .night-text a { 

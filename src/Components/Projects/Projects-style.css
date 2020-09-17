@@ -57,6 +57,7 @@
    transform: translate(-50%, -50%);
    animation: fade-in .5s;
    color: #8A8A8A;
+   
 }
 
 .expanded-title {
@@ -78,7 +79,6 @@
       rgb(158, 255, 171) 73%, 
       rgba(255,255,255,1) 93%); */
    background-color: rgb(46, 46, 46);
-
 }
 
 .no-card-selected {

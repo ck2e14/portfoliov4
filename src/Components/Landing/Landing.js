@@ -33,7 +33,7 @@ const Landing = props => {
 
          { renderTypewriter && 
             <Typical
-            steps={["I design and develop web apps to make people's lives easier. :)"]}
+            steps={["I design and develop web apps to make people's lives easier."]}
             loop={1}
             // wrapper="p"
             className='tagline'
