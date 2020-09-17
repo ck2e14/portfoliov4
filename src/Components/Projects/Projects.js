@@ -82,9 +82,14 @@ const Projects = props => {
       content:
          "Uses JavaScript Fetch API to display SpaceX's various rockets and dragon vehicles (technical data and gallery). JavaScript (ES6, Async) React (hooks), animated vanilla CSS.",
       link: "https://spacex-cwk.netlify.app",
-      codeLin: "https://github.com/ck2e14/spaceX-vehicles",
+      codeLink: "https://github.com/ck2e14/spaceX-vehicles",
    };
 
+   const match_stat ={
+      title: "Match_Stat",
+      content: "Utilises a variety of different APIs and endpoints to collate a whole load of useful information about a range of European countries' football leagues and domestic cup competitions, as well as team info, transfer news and more. Currently in development and not deployed.",
+      codeLink: "https://github.com/ck2e14/match_stat/"
+   }
    const portfolio = {
       title: "Portfolio Website",
       content:
@@ -109,6 +114,8 @@ const Projects = props => {
                      <ProjectCard project={mapStar} isDarkMode={isDarkMode} handleClick={handleCardClick} />
 
                      <ProjectCard project={vatCalc} isDarkMode={isDarkMode} handleClick={handleCardClick} />
+                     
+                     <ProjectCard project={match_stat} isDarkMode={isDarkMode} handleClick={handleCardClick} />
 
                      <ProjectCard
                         project={coronahvirus}
