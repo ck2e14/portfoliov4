@@ -127,6 +127,7 @@ _::-webkit-full-page-media, _:future, :root .expandedCard-blurb {
    font-weight: bold;
    color: rgb(68, 68, 68);
    padding: 2%;
+   flex: 1;
 }
 
 .expandedCard-links a:hover {
@@ -162,6 +163,7 @@ and (max-device-width : 480px) {
    .no-card-selected {
       font-size: 7vw;
       top: 50% !important;
+      transform: translate(-50%, -50%)
    }
    .expandedCards-content {
       /* border-bottom: 2px solid grey; */

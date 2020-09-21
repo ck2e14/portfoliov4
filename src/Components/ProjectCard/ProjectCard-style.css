@@ -47,7 +47,7 @@
 and (max-device-width : 480px) {
    .projectcard-container {
       -webkit-tap-highlight-color: transparent;
-      font-size: 4.5vw;
+      font-size: 3.5vw;
       line-height: 1;
    }
    .projectcard-container:hover {
