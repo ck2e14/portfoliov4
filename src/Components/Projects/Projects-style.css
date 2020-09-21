@@ -157,6 +157,7 @@ and (max-device-width : 480px) {
       flex: 1.5;
       margin-bottom: 5%;
       border-top: 2px solid grey;
+      border-right: none;
    }
    .no-card-selected {
       font-size: 7vw;
