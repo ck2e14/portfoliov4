@@ -37,8 +37,6 @@
 .skillcard-back {
    animation: fade-in 1s;
    height: 100%;
-   font-size: 1.75vh;
-   line-height: 1.5;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -48,7 +46,7 @@
 
 li {
    cursor: default;
-   font-size: 1.25vw;
+   font-size: 1vw;
    color: rgb(117, 117, 117);
 }
 
