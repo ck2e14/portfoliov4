@@ -151,7 +151,7 @@ and (max-device-width : 480px) {
       top: 0%;
       transform: none;
       height: fit-content;
-      align-items: flex-start;
+      align-items: center;
       width: 75%;
       left: 50%;
       transform: translateX(-50%);
