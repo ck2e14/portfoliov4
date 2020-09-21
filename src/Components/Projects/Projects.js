@@ -34,7 +34,7 @@ const Projects = props => {
    const hygenik = {
       title: "Hygenik",
       content:
-         "Plots Government's FSA hygiene ratings data for food-serving premises on a map and side-panel. Uses current location or search term. Users can blacklist sites. React.js (hooks, router), JavaScript (ES6, Async), CSS3, HTNL, JWT-Authentication, Rails API.",
+         "Plots Government's FSA hygiene ratings data for food-serving premises on a map and side-panel. Uses current location or search term. Users can blacklist sites. React.js (hooks, router), JavaScript (ES6, Async), CSS3, HTML, JWT-Authentication, Rails API.",
       link: "https://hygenik.herokuapp.com",
       codeLink: "https://github.com/ck2e14/frontend5",
    };
