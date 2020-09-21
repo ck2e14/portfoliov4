@@ -37,13 +37,15 @@
    user-select: none;
    align-items: flex-end;
    justify-content: space-evenly;
+   border-right: 2px solid grey;
+   padding-right: 7%;
    flex:1;
    z-index: 10;
 }
 
 /* EXPANDED PANEL CSS BELOW */
 .projects-expandedCards-container {
-   flex:1.75;
+   flex:2;
    border-top-right-radius: .5vw;
    position: relative;
    border-bottom-right-radius: .5vw;
@@ -81,21 +83,30 @@
    background-color: rgb(46, 46, 46);
 }
 
+_::-webkit-full-page-media, _:future, :root .expanded-title {
+   font: 2vw;
+   margin-bottom: 5%;
+}
+
 .no-card-selected {
    top: 50%;
-   transform: translate(-50%, -50%);
+   transform: translate(-65%, -70%);
    color: rgb(92, 92, 92);
    text-transform: none;
 }
 
 .expandedCard-blurb {
-   font-size: 1.5vw;
+   font-size: 1.25vw;
    position: relative;
    font-weight: bold;
-   top: 42%;
+   top: 35%;
    width: 80%;
    left: 50%;
    transform: translate(-50%, -50%);
+}
+
+_::-webkit-full-page-media, _:future, :root .expandedCard-blurb {
+   font-size: 1.1vw;
 }
 
 .expandedCard-links {
@@ -104,7 +115,10 @@
    text-transform: uppercase;
    font-size: 1vw;
    position: absolute;
-   margin-top: -1%;
+   margin-top: 3%;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
 }
 
 .expandedCard-links a {

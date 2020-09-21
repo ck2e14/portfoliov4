@@ -34,13 +34,13 @@ _::-webkit-full-page-media, _:future, :root .vertical-contact-title {
    position: relative;
    font-size: 1.3vw;
    color: rgb(31, 31, 31);
-   line-height: 1.8;
+   line-height: 1.2;
 }
 
 .contact-contents span {
    color: rgb(129, 129, 129);
    /* background-color: rgba(151, 212, 204, 0.438); */
-   font-size: 1.75vw;
+   font-size: 1.5vw;
    padding-left: .5%;
    padding-right: .5%;
    border-radius: .25vw;

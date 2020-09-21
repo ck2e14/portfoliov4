@@ -46,10 +46,7 @@ const About = props => {
                      <br />
                      Since graduating from FlatIron's immersive software engineering course in January, I've{" "}
                      <span>levelled-up</span> my full-stack and UX skillset through personal & commercial
-                     projects, online tutorials, forum chats and algorithm challenge websites like{" "}
-                     <a href='http://edabit.com' target='_blank' rel='noopener noreferrer' className='link'>
-                        edabit.com.
-                     </a>{" "}
+                     projects, online tutorials, forum chats and algorithm challenge websites.
                      <br />
                      <br />I am quietly <span>confident,</span> naturally <span>curious,</span> and{" "}
                      <span>always learning</span> new skills and new technologies.
