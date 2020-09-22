@@ -101,10 +101,11 @@ and (max-device-width : 480px) {
       width: 90%;;
       top: 75%;
       display: flex;;
-      justify-content: center;
+      justify-content: space-around;
 
    }
    .icon {
       margin: 3%;
+      height: 10vw;
    }
 }
