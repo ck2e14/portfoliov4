@@ -3,7 +3,7 @@
   width: 100vw;
   height: 100vh;
   overflow-x: hidden !important;
-  /* font-family: 'Tinos', serif;   */
+/* background: rgb(134, 170, 168); */
   font-family: 'Montserrat', sans-serif;
   transition: all .25s;
 }

@@ -27,17 +27,9 @@ const Contact = props => {
             <div className='content-border'>
                <div className='contact-contents text'>
                   <p>
-                     I am looking for <span>full-time opportunities in web development</span>, particularly
-                     frontend. Whilst I love working primarily with <span>JavaScript</span>, and especially{" "}
-                     <span>React</span>, I am always looking to learn new stacks and technologies.
+                     Let's connect!
                      <br />
-                     <br />
-                     <span>I work hard, learn quickly, and I'm always available</span> to debug or refactor!
-                     I'm also not afraid of irregular working hours, nor do I clock-off from high-priority
-                     work just because a working day has ended.
-                     <br />
-                     <br />I am available immediately, able to drive and willing to relocate from my current
-                     base in Surrey.
+                     <br /> You can reach my LinkedIn, email, mobile and GitHub profile via the links below.
                   </p>
                </div>
 

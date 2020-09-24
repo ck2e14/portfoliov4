@@ -3,8 +3,7 @@
    width: 100%;
    padding-left: 5%;
    z-index: 97;
-   font-family: 'Tinos', serif;  
-
+   font-family: "Tinos", serif;
 }
 
 .logo {
@@ -12,7 +11,7 @@
    left: 5%;
    top: 10%;
    z-index: 101;
-   filter: invert(.6);
+   filter: invert(0.6);
    height: 40%;
 }
 /* 
@@ -31,57 +30,44 @@
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   border: 2px solid rgb(175, 175, 175);
+   /* border: 2px solid rgb(123, 235, 211); */
    animation: fade-in 2s;
-   /* padding:0 10px; */
    z-index: 97;
 }
 
 .my-name {
-   position: relative;
+   position: absolute;
    top: 40%;
-   left: 50%;
-   transform: translate(-50%);
+   left: 15%;
+   /* transform: translate(-50%); */
    height: fit-content;
-   width: 80%;
-   border-bottom: 2px solid rgb(59, 59, 59);
+   width: fit-content;
+   /* border-bottom: 5px solid rgb(97, 97, 97); */
    font-size: 9vw;
-      background: linear-gradient(141deg, 
-         rgba(255,255,255,1) 7%, 
-         rgba(175,255,251,1) 21%, 
-         rgba(255,173,143,1) 51%, 
-         rgba(255,255,255,1) 88%);
    color: rgb(80, 80, 80);
-   transition: all .25s;;
-	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-   animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+   transition: all 0.25s;
+   -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .my-name span {
-   color: rgb(119, 119, 119);
-   font-size: 13vh;
+   color: rgb(129, 212, 192);
 }
 
 .tagline {
    position: absolute;
-   left: 15%;
-   /* transform: translateX(-50%); */
+   left: 20%;
    top: 58%;
-   width: fit-content;
-   /* background-color: #36f3f3; */
-   /* background: linear-gradient(90deg, rgba(248,255,255,1) 0%, rgba(54,243,243,1) 16%, rgba(153,251,251,1) 61%, rgba(208,252,252,1) 83%, rgba(255,255,255,1) 93%); */
-   color: rgb(80, 80, 80);  
+   color: rgb(80, 80, 80);
    font-size: 1.95vw;
    font-weight: bold;
-   border-radius: .25vw;
+   border-radius: 0.25vw;
    z-index: 91;
    border-top-right-radius: 0;
    border-top-left-radius: 0;
-   font-family: 'Montserrat', sans-serif;
+   font-family: "Montserrat", sans-serif;
    padding: 1%;
-   transition: all .25s;;
-   /* -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-   animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; */
+   transition: all 0.25s;
 }
 
 .tagline span {
@@ -91,12 +77,12 @@
 @-webkit-keyframes text-focus-in {
    0% {
       -webkit-filter: blur(12px);
-               filter: blur(12px);
+      filter: blur(12px);
       opacity: 0;
    }
    100% {
       -webkit-filter: blur(0px);
-               filter: blur(0px);
+      filter: blur(0px);
       opacity: 1;
    }
 }
@@ -104,12 +90,12 @@
 @keyframes text-focus-in {
    0% {
       -webkit-filter: blur(12px);
-               filter: blur(12px);
+      filter: blur(12px);
       opacity: 0;
    }
    100% {
       -webkit-filter: blur(0px);
-               filter: blur(0px);
+      filter: blur(0px);
       opacity: 1;
    }
 }
@@ -124,12 +110,18 @@
 }
 
 @keyframes AnimationName {
-   0%{background-position:0% 91%}
-   50%{background-position:100% 10%}
-   100%{background-position:0% 91%}
+   0% {
+      background-position: 0% 91%;
+   }
+   50% {
+      background-position: 100% 10%;
+   }
+   100% {
+      background-position: 0% 91%;
+   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 850px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 850px) {
    .tagline {
       width: 70%;
       top: 50%;

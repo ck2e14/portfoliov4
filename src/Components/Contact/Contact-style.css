@@ -9,11 +9,6 @@
    color: rgb(99, 205, 209);
    animation: fade-in 1s;
    cursor: default;
-   /* background: linear-gradient(72deg, 
-      rgba(255,255,255,1) 4%, 
-      rgb(255, 179, 179) 54%, 
-      rgb(255, 196, 196) 75%, 
-      rgba(255,255,255,1) 93%);    */
 }
 
 _::-webkit-full-page-media, _:future, :root .vertical-contact-title {
@@ -39,7 +34,6 @@ _::-webkit-full-page-media, _:future, :root .vertical-contact-title {
 
 .contact-contents span {
    color: rgb(129, 129, 129);
-   /* background-color: rgba(151, 212, 204, 0.438); */
    font-size: 1.5vw;
    padding-left: .5%;
    padding-right: .5%;
@@ -48,7 +42,7 @@ _::-webkit-full-page-media, _:future, :root .vertical-contact-title {
 
 .contact-links {
    position: absolute;
-   top: 80%;
+   top: 60%;
    width: fit-content;
    left: 50%;
    transform: translateX(-50%);
@@ -61,26 +55,16 @@ _::-webkit-full-page-media, _:future, :root .vertical-contact-title {
    height: 3vw;
    margin: .75vw;
    transition: all .25s;
-   /* filter: invert(.6); */
-   background: rgb(165, 227, 251);
    padding: 10%;
    border-radius: .5vw;
-}
-
-.i2 {
-   background: rgb(188, 255, 193);
-}
-
-.i3 {
-   background: rgb(146, 166, 255);
-}
-
-.i4 {
-   background: rgb(228, 158, 228)
+   filter: invert(.35);
+   position: relative;
+   bottom:0;
 }
 
 .icon:hover {
-   filter: brightness(1.1)
+   filter: invert(.7);
+   bottom: 5%;;
 }
 
 @media only screen and (min-device-width : 120px) 

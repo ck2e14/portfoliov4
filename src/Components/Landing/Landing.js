@@ -1,52 +1,59 @@
-import React, {useState, useEffect} from 'react';
-import './Landing.css'
-import Typical from 'react-typical'
+import React, { useState, useEffect } from "react";
+import "./Landing.css";
+import Typical from "react-typical";
 // import gitLogo from '../../Assets/Media/git-image.png'
-import brushStroke from '../../Assets/Media/brushStroke.png'
+import brushStroke from "../../Assets/Media/brushStroke.png";
 
 const Landing = props => {
-
-   const [ renderTypewriter, setRenderTypewriter ] = useState(false)
-   const { isDarkMode } = props
+   const [renderTypewriter, setRenderTypewriter] = useState(false);
+   const [renderTypewriter2, setRenderTypewriter2] = useState(false);
+   const { isDarkMode } = props;
 
    useEffect(() => {
       setTimeout(() => {
-         setRenderTypewriter(true)
+         setRenderTypewriter(true);
       }, 1300);
-   }, [])
+      setTimeout(() => {
+         
+      }, 1500);
+   }, []);
 
    useEffect(() => {
-      const textToChange = document.getElementsByClassName('watercolor-bg') 
-      if(isDarkMode) {
-         textToChange[0].classList.add('hide-watercolor-bg')
+      const textToChange = document.getElementsByClassName("watercolor-bg");
+      if (isDarkMode) {
+         textToChange[0].classList.add("hide-watercolor-bg");
       }
-      if(!isDarkMode) {
-         textToChange[0].classList.remove('hide-watercolor-bg')
+      if (!isDarkMode) {
+         textToChange[0].classList.remove("hide-watercolor-bg");
       }
-   }, [isDarkMode])
+   }, [isDarkMode]);
 
    return (
-      
-      <div className="landing-container">
+      <div className='landing-container'>
+         <div className='border-box' style={{ backgroundImage: `url:${brushStroke}` }}></div>
 
-         <div className="border-box" style={{backgroundImage: `url:${brushStroke}`}}></div>
-
-         { renderTypewriter && 
+         {renderTypewriter && (
             <Typical
-            steps={["I design and develop web apps to make people's lives easier."]}
-            loop={1}
-            // wrapper="p"
-            className='tagline'
+               steps={["Cloud Application Configuration and Support Engineer - Cimar UK"]}
+               loop={1}
+               // wrapper="p"
+               className='tagline'
             />
-         }
+         )}
 
-         <div className="my-name watercolor-bg">
-            Hi<span>,</span> I<span>'</span>m Chris<span>.</span>
+         {renderTypewriter2 && (
+            <Typical
+               steps={["Cloud Application Configuration and Support Engineer."]}
+               loop={1}
+               // wrapper="p"
+               className='tagline'
+            />
+         )}
+         <div className='my-name watercolor-bg'>
+            <span className="">C</span>hris <span>K</span>ennedy
          </div>
-
       </div>
+   );
+};
 
-   )
-}
-
-export default Landing
+export default Landing;

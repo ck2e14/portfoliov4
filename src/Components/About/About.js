@@ -26,30 +26,28 @@ const About = props => {
                {isMobile && (
                   <div className='about-blurb text'>
                      <div className='blurb-contents-mobile'>
-                        I am a junior <span> full-stack web developer.</span> I love to dream-up and develop{" "}
-                        <span>performant,</span> <span>powerful</span> &{" "}
-                        <span>attractive user experiences</span>, particularly in React.js, supported by Rails
-                        backends.
+                        I trained as a full-stack web developer before joining Cimar UK as a Cloud Application
+                        Configuration & Support Engineer. Cimar provides secure cloud-based medical PACS
+                        solutions for NHS and private healthcare.
                         <br />
-                        <br />I am quietly <span>confident,</span> naturally <span>curious,</span> and{" "}
-                        <span>always learning</span> new skills and new technologies.
+                        <br />I am quietly confident, naturally curious, and always learning new skills and
+                        technologies.
                      </div>
                   </div>
                )}
 
                {!isMobile && (
                   <div className='about-blurb text'>
-                     I am a junior <span> full-stack web developer.</span> I love to dream-up and develop{" "}
-                     <span>performant,</span> <span>powerful</span> & <span>attractive user experiences</span>
-                     , particularly in React.js, supported by Rails backends.
+                     I trained as a full-stack web developer before joining Cimar UK as a Cloud Application
+                     Configuration & Support Engineer. Cimar provides high-quality, secure cloud-based medical
+                     imaging solutions for NHS and private healthcare.
                      <br />
                      <br />
-                     Since graduating from FlatIron's immersive software engineering course in January, I've{" "}
-                     <span>levelled-up</span> my full-stack and UX skillset through personal & commercial
-                     projects, online tutorials, forum chats and algorithm challenge websites.
+                     I love to spend my spare time dreaming-up and developing performant, powerful &
+                     attractive user experiences, particularly in React.js, supported by Rails RESTful APIs.
                      <br />
-                     <br />I am quietly <span>confident,</span> naturally <span>curious,</span> and{" "}
-                     <span>always learning</span> new skills and new technologies.
+                     <br />I am quietly confident, naturally curious, and always learning new skills and
+                     technologies.
                   </div>
                )}
 
@@ -57,11 +55,11 @@ const About = props => {
                   <SkillCard
                      title={"Development Skills"}
                      listArray={[
-                        "JavaScript (ES6, Async & Promises, OOP)",
-                        "React.js (Hooks, Router, Redux)",
+                        "JavaScript, React.js",
+                        "Python",
                         "HTML",
                         "CSS",
-                        "Ruby on Rails (REST API, JWT auth, OOP)",
+                        "Ruby, Rails RESTful APIs",
                         "RegEx",
                         "SQL",
                         "PostgreSQL & SQLite",
@@ -69,21 +67,22 @@ const About = props => {
                   />
 
                   <SkillCard
-                     title={"Design Skills & Tools"}
-                     listArray={["Balsamiq", "Sketch", "Adobe Lightroom", "DaVinci Resolve", "Pen & Paper!"]}
-                  />
-
-                  <SkillCard
                      title={"Support & Soft Skills"}
                      listArray={[
-                        "Git & GitHub versioning",
-                        "Excellent Communicator",
-                        "Teamworker",
+                        "Git versioning & GitHub",
+                        "Excellent communicator",
+                        "Customer service",
+                        "Team player",
                         "Self-teacher & independent worker",
-                        "FTP Server Management (FileZilla)",
+                        "FTP (FileZilla)",
                         "100WPM Typist",
                         "Mavic Pro Cinematic Drone Pilot",
                      ]}
+                  />
+
+                  <SkillCard
+                     title={"Design Skills & Tools"}
+                     listArray={["Balsamiq", "Sketch", "Adobe Lightroom", "DaVinci Resolve", "Pen & Paper!"]}
                   />
                </div>
             </div>

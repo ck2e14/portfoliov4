@@ -1,26 +1,29 @@
 .navbar-container {
    position: fixed;
-   left: 0; top: 0;
+   left: 0;
+   top: 0;
    width: 5%;
    height: 100%;
    z-index: 99;
    background-color: rgba(31, 31, 31, 0);
    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
-   font-family: 'Montserrat', sans-serif;
-   transition: all .5s;
+   font-family: "Montserrat", sans-serif;
+   transition: all 0.5s;
    font-weight: bold;
-	-webkit-animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-   animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+   -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+   animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .navbar-container:hover {
    width: 18%;
-   background-color: rgb(42, 161, 151);
+   background-color: rgb(136, 179, 175);
    box-shadow: 2px 2px 25px rgb(0, 0, 0);
 }
 
-_::-webkit-full-page-media, _:future, :root .navbar-container:hover {
-   width: 16%
+_::-webkit-full-page-media,
+_:future,
+:root .navbar-container:hover {
+   width: 16%;
 }
 
 .navbar-container:hover > .navbar-flex-container {
@@ -39,8 +42,8 @@ _::-webkit-full-page-media, _:future, :root .navbar-container:hover {
    opacity: 0;
    transform: translateY(-50%);
    color: rgb(119, 119, 119);
-   animation: fade-in .5s;
-   animation-delay: .2s;
+   animation: fade-in 0.5s;
+   animation-delay: 0.2s;
    animation-fill-mode: forwards;
 }
 
@@ -48,49 +51,72 @@ _::-webkit-full-page-media, _:future, :root .navbar-container:hover {
    cursor: pointer;
    position: relative;
    font-size: 1.25vw;
-   width: fit-content;   
+   width: fit-content;
    font-weight: bold;
    letter-spacing: 3px;
    text-decoration: none !important;
    z-index: 99;
    user-select: none;
-   transition: color .25s;
+   transition: color 0.25s;
    left: 50%;
    transform: translate(-50%);
-   top:0;
+   top: 0;
    text-transform: uppercase;
 }
 
-_::-webkit-full-page-media, _:future, :root .nav-item {
+_::-webkit-full-page-media,
+_:future,
+:root .nav-item {
    letter-spacing: 0px;
 }
 
 .nav-item::before {
-   content: '';
+   content: "";
    position: absolute;
    width: 100%;
    transform: scaleX(0);
    height: 2px;
-   bottom: 0;
+   bottom: -20%;
    left: 0;
-   background-color: rgb(119, 119, 119);
+   background-color: rgb(187, 187, 187);
    transform-origin: bottom center;
-   transition: transform .25s ease-in-out;
+   transition: transform 0.25s ease-in-out;
 }
 
 .nav-item:hover::before {
-   transform: scaleX(.65);
-   transition: transform .25s ease-in-out;
+   transform: scaleX(0.6);
+   transition: transform 0.25s ease-in-out;
    transform-origin: bottom center;
-   background-color: rgb(0, 0, 0);
+   background-color: rgb(189, 189, 189);
+}
+
+.nav-item::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 2px;
+   top: -20%;
+   left: 0;
+   background-color: rgb(189, 189, 189);
+   transform-origin: bottom center;
+   transition: transform 0.25s ease-in-out;
+}
+
+.nav-item:hover::after {
+   transform: scaleX(0.6);
+   transition: transform 0.25s ease-in-out;
+   transform-origin: bottom center;
+   background-color: rgb(189, 189, 189);
 }
 
 a {
-   color: rgb(255, 255, 255);
+   color: rgb(58, 58, 58);
 }
 
 .nav-item:hover {
-   color: rgb(209, 209, 209);
+   color: rgb(255, 255, 255);
+
 }
 
 .not-expanded {
@@ -104,7 +130,7 @@ a {
    left: -20%;
    height: fit-content;
    opacity: 1;
-   letter-spacing: .4vh;
+   letter-spacing: 0.4vh;
    animation: fade-in 1s;
 }
 
@@ -114,4 +140,3 @@ a {
    z-index: 1;
    visibility: hidden;
 }
-
