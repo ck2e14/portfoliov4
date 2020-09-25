@@ -52,6 +52,8 @@
 
 .my-name span {
    color: rgb(129, 212, 192);
+   -webkit-animation: text-focus-in .1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+   animation: text-focus-in .1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .tagline {

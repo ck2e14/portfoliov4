@@ -29,15 +29,15 @@
    bottom: 0;
    left: 0;
    background-color: #f88379;
-   transform-origin: bottom left;
+   transform-origin: bottom right;
    user-select: none;
-   transition: transform 1s;
+   transition: transform .5s;
 }
 
 .projectcard-container:hover::before {
-   transform: scaleX(.6);
+   transform: scaleX(.75);
    transform-origin: bottom right;
-   transition: transform .3s;
+   transition: transform .5s;
    user-select: none;
    background-color: #f88379
 }
