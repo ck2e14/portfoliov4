@@ -4,6 +4,7 @@
    padding-left: 5%;
    z-index: 97;
    font-family: "Tinos", serif;
+   background: url(/src/Assets//Media/abstract_network.jpg);
 }
 
 .logo {
@@ -30,7 +31,7 @@
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   /* border: 2px solid rgb(123, 235, 211); */
+   border: 2px solid rgb(123, 235, 211);
    animation: fade-in 2s;
    z-index: 97;
 }

@@ -43,7 +43,7 @@ const Projects = props => {
       title: "eXchange",
       content:
          "Currency exchange rate calculator. Rates pulled live from exchangeratesapi.io. React.js (hooks), JavaScript (ES6, fetch), vanilla CSS3, HTML.",
-      link: "https://practical-goldstine-fa44e5.netlify.app",
+      link: "https://exchange-cwk.netlify.app",
       codeLink: "https://github.com/ck2e14/eXchange",
    };
 
@@ -90,6 +90,7 @@ const Projects = props => {
       content: "Utilises a variety of different APIs and endpoints to collate a whole load of useful information about a range of European countries' football leagues and domestic cup competitions, as well as team info, transfer news and more. Currently in development and not deployed.",
       codeLink: "https://github.com/ck2e14/match_stat/"
    }
+
    const portfolio = {
       title: "Portfolio Website",
       content:
